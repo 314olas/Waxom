@@ -1,0 +1,23 @@
+.header-holder {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-toggler:focus {
+  outline-color: $link-hover;
+}
+
+header{
+  z-index: 55;
+  position: relative;
+}
+
+// .navbar-collapse.collapse {
+//   position: absolute; 
+// }
+
+// .show {
+//   position: absolute;  
+// }
+

@@ -1,0 +1,97 @@
+
+
+$font-family-sans-serif: 'Raleway','Montserrat', sans-serif;
+
+$white: #fff;
+$black: #2e2f35;    //heder nav color
+$light: #a5a5a5; 
+$gray: #8c8c8c; 
+$gray-900: #2a2b31; //navbar bg color
+
+$link-hover: #c7b299;
+
+$text-color: #8c8c8c; 
+
+$secondary: $text-color;
+
+$btn-bg: #998675;
+$light: #998675;
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "secondary":  $secondary,
+    "light":      $light 
+  )
+);
+
+$container-max-widths: map-merge(
+  $container-max-widths,
+  (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1260px
+  )
+);
+
+
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $text-color;
+
+
+$body-color: $text-color;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                $text-color;
+$link-hover-color:          $link-hover;
+$link-hover-decoration:     none;
+
+
+
+$navbar-brand-padding-y: 0;
+//$navbar-dark-hover-color: ;
+//$navbar-dark-active-color: ;
+$navbar-light-hover-color: $link-hover;
+$navbar-light-color: $white;
+$navbar-light-active-color: $link-hover;
+$navbar-light-toggler-border-color: $secondary;
+
+
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: darken($white, 15%);
+$dropdown-link-hover-bg: none;
+
+
+
+// Dropdown menu container and contents.
+
+$dropdown-min-width: 8rem;
+
+$btn-border-radius: .1rem;
+$btn-focus-width: none;
+$btn-focus-box-shadow: none;
+$btn-border-width: 3px; 
+$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+$input-color: $text-color;
+//$input-focus-border-color: darken($secondary, 25%);
+$input-focus-box-shadow: darken($text-color, 25%);
+$input-placeholder-color: $light;
+$input-border-radius: 0px;
+
+$headings-font-weight:700;
+$headings-margin-bottom: 0;
+//$headings-color: ;
+
+$h2-font-size: 36px;
+$h3-font-size: 30px;
+$h4-font-size: 15px;
+$h5-font-size: 14px;
+
+
+
