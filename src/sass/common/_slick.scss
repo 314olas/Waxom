@@ -75,8 +75,6 @@
         display: none;
     }
 
-    display: none;
-
     &.dragging img {
         pointer-events: none;
     }
@@ -94,7 +92,13 @@
         height: auto;
         border: 1px solid transparent;
     }
+
+    &.slick-current.slick-active{
+        opacity: 1;
+    }
 }
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+

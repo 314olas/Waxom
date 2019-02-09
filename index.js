@@ -36,5 +36,10 @@ $(document).ready(function(){
     }
   ]
   });
+
+  $('#search').click(function(e){
+    e.preventDefault();
+    $('#search-form').toggleClass('show');
+  })
 });
 

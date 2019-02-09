@@ -34,6 +34,11 @@ img {
   height: auto;
 }
 
+input{
+  outline: none;
+  padding: 5px 10px;
+}
+
 .btn-light{
   text-transform: uppercase;
   border-bottom-color: $btn-bottom-border-color;
@@ -41,6 +46,7 @@ img {
 }
 
 .common-decor-section{
+  margin-bottom: 40px;
 
   &:after{
     position: absolute;
@@ -56,10 +62,10 @@ img {
   text-align: center;
   margin: 0 auto;
   padding-bottom: 20px;
+  padding-top: 75px;
 
   @media (min-width: 768px){
     width: 75%;
-    padding-top: 75px;
   }
 }
 
@@ -132,7 +138,6 @@ img {
   }
 
   .common-decor-section{
-    margin-bottom: 40px;
 
     &:after {
       border-color: $decor-color;
@@ -141,15 +146,21 @@ img {
       bottom: -15px;
     }
 
-    h4{
+    h5{
       transition: .4s color;
     }
 
     &:hover{
 
-      .icon-holder,
-      h4{
+      .icon-holder{
          color: $link-hover;
+      }
+
+      .title-holder{
+
+        h5{
+          color: $link-hover;
+        }
       }
 
       &:after{
@@ -164,6 +175,7 @@ img {
 ////Section  realization
 .realization{
   background-color: $realization-bg-color;
+  color: $text-color-realization-footer;
 
   .title-holder {
     margin-bottom: 20px;
@@ -175,7 +187,6 @@ img {
 
     p{
       margin-bottom: 0;
-      color: $text-color-realization-footer
     }
 
     h3{
@@ -292,6 +303,17 @@ li.active {
   background-color: rgba($latest-hover-color, .6);
   opacity: 0;
   transition: .3s opacity;
+
+  a:hover{
+
+    .icon-link{
+      color: lighten($link-hover, 15%);
+    }
+
+    .icon-search{
+      color: darken($white, 20%);
+    }
+  }
 
   a:first-child {
     margin-right: 20px;
@@ -426,9 +448,10 @@ li.active {
 }
 
 .emblem-holder{
+  padding: 40px;
 
   img{
-    padding: 40px;
+   
   }
 }
 

@@ -21,3 +21,28 @@ header{
 //   position: absolute;  
 // }
 
+
+.search-toggler{
+
+}
+
+.search-form.show{
+  transform: translateX(0); 
+  opacity: 1 ;
+}
+
+.search-form{
+  position: absolute;
+  right: 0;
+  transform: translateX(200%);
+  opacity: 0;
+  transition: .3s transform, .3s opacity;
+
+  
+
+  input{
+    border-radius: 10px;
+    border:none;
+  }
+}
+
