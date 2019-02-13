@@ -1,0 +1,40 @@
+.realization{
+  background-color: $realization-bg-color;
+  color: $text-color-realization-footer;
+
+  
+
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 18px;
+
+    p{
+      margin-bottom: 0;
+    }
+
+    h3{
+      font-size: 28px;
+      color: $white;
+    }
+
+    span{
+      color: $link-hover;
+    }
+  }
+}
+
+.latest-work {
+
+  img {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+  }
+}
+
+.video-rpesentation {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}

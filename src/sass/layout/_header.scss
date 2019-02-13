@@ -9,7 +9,6 @@
 }
 
 header{
-  z-index: 55;
   position: relative;
 }
 
@@ -20,11 +19,6 @@ header{
 // .show {
 //   position: absolute;  
 // }
-
-
-.search-toggler{
-
-}
 
 .search-form.show{
   transform: translateX(0); 

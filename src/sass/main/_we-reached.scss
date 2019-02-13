@@ -1,0 +1,30 @@
+.we-reached{
+  padding: 60px 0;
+
+  [class^="icon-"],
+  [class*=" icon-"]{
+    color: $link-hover;
+    font-size: 36px;
+  }
+  .common-decor-section{
+
+    &:after{
+      border-color: $white;
+      bottom: -20px;
+    }
+  }
+}
+
+.number{
+  color: $white;
+  font-size: 48px;
+}
+
+.description{
+  font-size: 14px;
+  color: $link-hover;
+}
+
+.recent-posts{
+  padding-bottom: 75px;
+}

@@ -1,3 +1,14 @@
+@import "./main/we-do";
+@import "./main/realization";
+@import "./main/latest-work";
+@import "./main/card";
+@import "./main/we-reached";
+@import "./main/our-info";
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
 #wrapper {
   min-width: 320px;
   overflow: hidden;
@@ -5,6 +16,7 @@
 
 h1,h2,h3,h4,h5{
   color: $text-heading-color;
+  font-family: 'Raleway', sans-serif;
 }
 
 h2{
@@ -43,6 +55,8 @@ input{
   text-transform: uppercase;
   border-bottom-color: $btn-bottom-border-color;
   font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
 .common-decor-section{
@@ -63,6 +77,10 @@ input{
   margin: 0 auto;
   padding-bottom: 20px;
   padding-top: 75px;
+
+  .title-holder {
+    margin-bottom: 20px;
+  }
 
   @media (min-width: 768px){
     width: 75%;
@@ -103,282 +121,11 @@ input{
   background-image: linear-gradient(50deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
 }
 
-/////////we-do
-.we-do {
-  padding-top: 78px;
-  padding-bottom: 78px;
-
-  article {
-    text-align: center;
-    position: relative;
-  }
-    
-  .article-link{
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top:0;
-      bottom: 0;
-  }
-
-  [class^="icon-"],
-  [class*=" icon-"] {
-    font-size: 1.7rem;
-  }
-
-  .icon-holder{
-    margin-bottom: 20px;
-    transition: .4s color;
-  }
-
-  .title-holder {
-    margin-bottom: 10px;
-    transition: .4s color;
-  }
-
-  .common-decor-section{
-
-    &:after {
-      border-color: $decor-color;
-      width: 60px;
-      transition: .4s border-color;
-      bottom: -15px;
-    }
-
-    h5{
-      transition: .4s color;
-    }
-
-    &:hover{
-
-      .icon-holder{
-         color: $link-hover;
-      }
-
-      .title-holder{
-
-        h5{
-          color: $link-hover;
-        }
-      }
-
-      &:after{
-        border-color: $link-hover;
-      }
-    }
-  }
-}
-
-
-
-////Section  realization
-.realization{
-  background-color: $realization-bg-color;
-  color: $text-color-realization-footer;
-
-  .title-holder {
-    margin-bottom: 20px;
-  }
-
-  footer {
-    padding-top: 50px;
-    padding-bottom: 50px;
-
-    p{
-      margin-bottom: 0;
-    }
-
-    h3{
-      font-size: 28px;
-      color: $white;
-    }
-
-    span{
-      color: $link-hover;
-    }
-  }
-}
-
-.latest-work {
-
-  img {
-    width: 100%;
-    height: auto;
-    display: inline-block;
-  }
-}
-
-.video-rpesentation {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
-////////latest-work
-.filter {
-  padding: 0;
-  list-style: none;
-  margin-left: -10px;
-  margin-right: -10px;
-  flex-wrap: wrap;
-
-  a{
-    transition: .3s color;
-
-    
-  }
-
-  li{
-    padding: 5px 28px;
-    margin: 6px 10px;
-    border: 1px solid $filter-link-border-color;
-    border-radius: 3px;
-    background-color: transparent;
-    white-space: nowrap;
-    transition: .3s background-color border;
-
-    &:hover{
-      background-color: $link-hover;
-      border: 1px solid $link-hover;
-      border-radius: 3px;
-      
-      a{
-        color: $white;
-      }
-    }
-  }
-}
-
-li.active {
-  background-color: $link-hover;
-  border: 1px solid $link-hover;
-  border-radius: 3px;
-
-  a{
-    color: $white;
-  }
-}
-///////// card
-.common-card {
-  margin-bottom: 20px;
-
-  &:hover{
-
-    .common-card-title{
-      background-color: $latest-hover-color;
-
-      &:before{
-        border-bottom-color: $latest-hover-color;
-      }
-
-      h5{
-        color: $white;
-      }
-
-      p{
-        color: $link-hover;
-      }
-    }
-    .card-img-hover-block{
-      opacity: 1;
-    }
-  }
-}
-
-.card-img-holder{
-  position: relative;
-  overflow: hidden;
-}
-
-.card-img-hover-block{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba($latest-hover-color, .6);
-  opacity: 0;
-  transition: .3s opacity;
-
-  a:hover{
-
-    .icon-link{
-      color: lighten($link-hover, 15%);
-    }
-
-    .icon-search{
-      color: darken($white, 20%);
-    }
-  }
-
-  a:first-child {
-    margin-right: 20px;
-  }
-
-  .icon-link {
-    color: $link-hover;
-    font-size: 22px;
-  }
-
-  .icon-search {
-    color: $white;
-    font-size: 20px;
-  }
-}
-
-.common-card-title{
-  position: relative;
-  padding: 15px 0 15px 30px;
-  transition: .3s background-color;
-
-  h5{
-    color: $link-hover;
-    transition: .4s color;
-  }
-
-  p{
-    color: $latest-color-paragraph;
-    margin: 0;
-    transition: .4s color;
-    font-size: 14px;
-  }
-}
-
-.triangle-for-card{
-
-  &::before{
-    position: absolute;
-    content: "";
-    width: 30px;
-    height: 5px;
-    border: 19px solid transparent;
-    border-bottom: 15px solid $white;
-    top: -30px;
-    left: 15px;
-    transition: .3s border-bottom-color;
-  }
-}
-
-.video-content{
-  z-index: 55;
-}
-
-.play{
-
-  span{
-    font-size: 50px;
-    color: $white;
-  }
-}
-
 .ul-list{
   padding: 0;
   margin-left: 30px;
   list-style: none;
+  margin-bottom: 0;
 
   li{
     position: relative;
@@ -411,35 +158,6 @@ li.active {
     }
   }
 }
-
-//////////we-reached
-.we-reached{
-  padding: 60px 0;
-
-  [class^="icon-"],
-  [class*=" icon-"]{
-    color: $link-hover;
-    font-size: 36px;
-  }
-  .common-decor-section{
-
-    &:after{
-      border-color: $white;
-      bottom: -20px;
-    }
-  }
-}
-
-.number{
-  color: $white;
-  font-size: 48px;
-}
-
-.description{
-  font-size: 14px;
-  color: $link-hover;
-}
-
 ///////emblems
 .emblems{
   background-repeat: no-repeat;
@@ -449,109 +167,31 @@ li.active {
 
 .emblem-holder{
   padding: 40px;
-
-  img{
-   
-  }
 }
 
 .emblem-indent{
   padding: 90px 0;
 }
 
+.for-mobile{
+  padding: 80px 0;
 
-////our-info
-.our-info{
-  background-color: $bg-our-info;
-  padding: 70px 0;
-  color: $text-heading-color;
+  @media(min-width:767px){
+    padding-bottom: 0;
 
-  .read-more{
-    color: $light-gray;
-  }
-
-  p{
-    margin: 0;
-    font-size: 14px;
-  }
-
-  img{
-    padding: 5px;
-  }
-
-  h4{
-    padding-top: 30px;
-  }
-}
-
-.post{
-
-  &:hover{
-    
-    .post-date{
-      color: $white;
-    }
-
-    .post-content{
-      color: $link-hover;
+    .ul-list{
+      padding-bottom: 50px;
     }
   }
 
-  .post-link{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-  }
-}
-
-.post-content{
-  transition: .3s color;
-}
-
-.post-date,
-.when{
-  color: $post-date-color;
-  font-size: 12px;
-  transition: .2s color;
-}
-
-.our-info-list{
-  list-style: none;
-  padding: 0;
-
-  li{
-    padding: 30px 0;
-    position: relative;
-
-    &:after{
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      bottom: 0;
-      left: 0;
-      background-color: lighten($bg-our-info, 4.5%);
-    }
-  }
-
-  li:last-child{
-
-    &:after{
-      content: none;
-    }
-  }
   
-  .twitter-content{
-    
-    a{
-      color: $twitter-content-link-color;
-    }
-  }
+}
 
-  .twitter-content-span{
-    color: $blue;
-  }
+.for-mobile-title{
+  padding-bottom: 25px;
+}
+
+.for-mobile-content{
+   padding-bottom: 30px;
 }
 

@@ -1,0 +1,46 @@
+
+.filter {
+  padding: 0;
+  list-style: none;
+  margin-left: -10px;
+  margin-right: -10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+
+  a{
+    transition: .3s color;
+
+    
+  }
+
+  li{
+    text-align: center;
+    padding: 5px 28px;
+    margin: 6px 10px;
+    border: 1px solid $filter-link-border-color;
+    border-radius: 3px;
+    background-color: transparent;
+    white-space: nowrap;
+    transition: .3s background-color border;
+
+    &:hover{
+      background-color: $link-hover;
+      border: 1px solid $link-hover;
+      border-radius: 3px;
+      
+      a{
+        color: $white;
+      }
+    }
+  }
+}
+
+li.active {
+  background-color: $link-hover;
+  border: 1px solid $link-hover;
+  border-radius: 3px;
+
+  a{
+    color: $white;
+  }
+}

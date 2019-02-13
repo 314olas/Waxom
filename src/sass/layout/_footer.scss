@@ -1,3 +1,48 @@
 footer{
+  color: $text-heading-color;
   background-color: $footer-bg;
+
+  a{
+    color: $twitter-content-link-color;
+  }
+
+
+  .item-holder{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width:1024px){
+      flex-direction: row;
+    }
+  }
+}
+
+.ul-bordered{
+  margin: 0 -12px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+
+  li{
+    padding: 5px 0;
+  }
+
+  @media (min-width:768px){
+    flex-direction: row;
+
+    li{
+      padding: 0 12px;
+      border-right: 2px solid $month-bg-color;
+    }
+
+    li:last-child{
+      border-right: none;
+    }
+  }
 }

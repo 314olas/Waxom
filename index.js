@@ -11,6 +11,9 @@ $(document).ready(function(){
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    appendArrows: $('.for-arrows-box'),
+    prevArrow: '<button id="prev" type="button" class="prev"></button>',
+    nextArrow: '<button id="next" type="button" class="next"></button>',
     responsive: [
     {
       breakpoint: 1024,

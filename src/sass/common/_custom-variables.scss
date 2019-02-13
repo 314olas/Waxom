@@ -1,12 +1,8 @@
-
-
 $font-family-sans-serif: 'Raleway','Montserrat', sans-serif;
 
 $white: #fff;
-$black: #2e2f35;    //heder nav color
 $light: #a5a5a5; 
 $gray: #8c8c8c; 
-$gray-900: #2a2b31; //navbar bg color
 
 $link-hover: #c7b299;
 
@@ -38,9 +34,7 @@ $container-max-widths: map-merge(
 
 
 // Customize the light and dark text colors for use in our YIQ color contrast function.
-$yiq-text-dark: $text-color;
-
-
+$yiq-text-dark: $secondary;
 $body-color: $text-color;
 
 // Links
@@ -51,7 +45,8 @@ $link-color:                $text-color;
 $link-hover-color:          $link-hover;
 $link-hover-decoration:     none;
 
-
+// $nav-link-padding-y: 0;
+// $nav-link-padding-x: 0;
 
 $navbar-brand-padding-y: 0;
 //$navbar-dark-hover-color: ;
@@ -88,10 +83,8 @@ $headings-font-weight:700;
 $headings-margin-bottom: 0;
 //$headings-color: ;
 
-$h2-font-size: 36px;
-$h3-font-size: 30px;
-$h4-font-size: 15px;
-$h5-font-size: 14px;
-
-
-
+$h2-font-size:                $font-size-base * 2.25;
+$h3-font-size:                $font-size-base * 1.875;
+$h4-font-size:                $font-size-base * 1.5;
+$h5-font-size:                $font-size-base * 1.375;
+$h6-font-size:                $font-size-base * 1.25;

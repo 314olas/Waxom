@@ -1,0 +1,66 @@
+.we-do {
+  padding-top: 78px;
+  padding-bottom: 78px;
+
+  article {
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+  }
+    
+  .article-link{
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top:0;
+      bottom: 0;
+  }
+
+  [class^="icon-"],
+  [class*=" icon-"] {
+    font-size: 1.7rem;
+  }
+
+  .icon-holder{
+    margin-bottom: 20px;
+    transition: .4s color;
+  }
+
+  .title-holder {
+    margin-bottom: 10px;
+    transition: .4s color;
+  }
+
+  .common-decor-section{
+
+    &:after {
+      border-color: $decor-color;
+      width: 60px;
+      transition: .4s border-color;
+      bottom: -15px;
+    }
+
+    h5{
+      transition: .4s color;
+    }
+
+    &:hover{
+
+      .icon-holder{
+         color: $link-hover;
+      }
+
+      .title-holder{
+
+        h5{
+          color: $link-hover;
+        }
+      }
+
+      &:after{
+        border-color: $link-hover;
+      }
+    }
+  }
+}
