@@ -12,6 +12,7 @@ body{
 #wrapper {
   min-width: 320px;
   overflow: hidden;
+  border: 1px solid $black;
 }
 
 h1,h2,h3,h4,h5{
@@ -59,6 +60,12 @@ input{
   font-weight: 700;
 }
 
+.read-more{
+  position: relative;
+  display: inline-block;
+  outline: none;
+}
+
 .common-decor-section{
   margin-bottom: 40px;
 
@@ -69,6 +76,14 @@ input{
     transform: translateX(-50%);
     border-top: 2px solid;
     width: 60px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media(min-width: 1024px){
+    margin-bottom: 0;
   }
 }
 
@@ -99,6 +114,7 @@ input{
 
 .common-filter-section {
   position: relative;
+  z-index: 1;
 
   &:after {
     content: "";
@@ -107,8 +123,8 @@ input{
     right: 0;
     bottom: 0;
     top: 0;
-    filter: brightness(0.6);
-    z-index: 5;
+    background-color: rgba($black, .6);
+    z-index: 1;
   }
 }
 

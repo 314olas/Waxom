@@ -1,6 +1,5 @@
 
 import collapse from "./src/js/collapse.js";
-//import slick from "./src/js/slick.min.js"
 
 
 $(document).ready(function(){
@@ -43,6 +42,10 @@ $(document).ready(function(){
   $('#search').click(function(e){
     e.preventDefault();
     $('#search-form').toggleClass('show');
+    setTimeout(() => {
+      $('#search-input').focus();
+    }, 500);
+    
   })
 });
 

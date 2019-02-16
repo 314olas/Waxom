@@ -1,7 +1,8 @@
-.header-holder {
+.for-bg-block {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 1;
 }
 
 .navbar-toggler:focus {
@@ -10,15 +11,22 @@
 
 header{
   position: relative;
+  z-index: 120;
 }
 
-// .navbar-collapse.collapse {
-//   position: absolute; 
-// }
+.nav-position{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  text-align: center;
+  background-color: rgba($black, .7);
 
-// .show {
-//   position: absolute;  
-// }
+  @media (min-width: 868px){
+    position: relative;
+    background-color: transparent;
+  }
+}
 
 .search-form.show{
   transform: translateX(0); 

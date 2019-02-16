@@ -27,6 +27,7 @@
 .card-img-holder{
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 .card-img-hover-block{
@@ -41,6 +42,7 @@
   background-color: rgba($latest-hover-color, .6);
   opacity: 0;
   transition: .3s opacity;
+   z-index: 2;
 
   a:hover{
 
@@ -59,12 +61,12 @@
 
   .icon-link {
     color: $link-hover;
-    font-size: 22px;
+    font-size: 28px;
   }
 
   .icon-search {
     color: $white;
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 
@@ -98,18 +100,9 @@
     top: -30px;
     left: 15px;
     transition: .3s border-bottom-color;
+    z-index: 2;
   }
 }
 
-.video-content{
-  z-index: 55;
-}
 
-.play{
-
-  span{
-    font-size: 50px;
-    color: $white;
-  }
-}
 

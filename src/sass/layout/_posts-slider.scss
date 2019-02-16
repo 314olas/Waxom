@@ -142,19 +142,7 @@
   padding: 12px 0;
 }
 
-.read-more{
-  position: relative;
-  display: block;
 
-  &:after{
-    position: absolute;
-    content: "";
-    border: 6px solid transparent;
-    border-left: 6px solid;
-    left: 88px;
-    bottom: 3px;
-  }
-}
 
 .card-img-holder{
 

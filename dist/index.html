@@ -10,60 +10,61 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
-    
 </head>
 <body>
     <div id="wrapper">
-      <div class="header-holder" style="background-image: url('images/header.jpg')">
-        <header>
+      <div class="common-filter-section for-bg-block" style="background-image: url('images/header.jpg')">
+        <header class="pt-3">
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                  <a class="navbar-brand" href="#"><h1><img src="images/logo.png" alt="waxom"></h1></a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-4">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Shortcodes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li>
-                    </ul>
-                    <ul class="navbar-nav position-relative">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#"><span class="icon-basket"></span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" id="search" href="#"><span class="icon-search"></span></a>
-                        <form action="#" class="search-form" id="search-form">
-                          <input  type="text" placeholder="Search">
-                        </form>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
+                <div>
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="#"><h1><img src="images/logo.png" alt="waxom"></h1></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end nav-position" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-4">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Shortcodes</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a>
+                        </li>
+                      </ul>
+                      <ul class="navbar-nav position-relative">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><span class="icon-basket"></span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="search" href="#"><span class="icon-search"></span></a>
+                          <form action="#" class="search-form" id="search-form">
+                            <input  type="text" id="search-input" placeholder="Search">
+                          </form>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                </div>
               </div>
             </div>
           </div>
@@ -71,7 +72,7 @@
         <div class="container">
           <div class="row justify-content-center">
           <div class="col-12 col-md-10 ">
-            <div class="slider-portfolio-template">
+            <div class="slider-portfolio-template mb-5">
             <div class="slider-item">
               <div class="item-holder common-slider-section">
                 <h2>Unique and Modern Design</h2>
@@ -107,508 +108,510 @@
         </div>
         </div>
       </div>
-      <div class="container we-do">
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-            <article class="">
-              <div class="icon-holder">
-                <span class="icon-pencil"></span>
-              </div>
-              <div class="title-holder">
-                <h5>Web & App Design</h5>
-              </div> 
-              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-              <a href="#" class="article-link"></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-            <article>
-              <div class="icon-holder">
-                <span class="icon-stack"></span>
-              </div>
-              <div class="title-holder">
-                <h5>Development</h5>
-              </div> 
-              <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-              <a href="#" class="article-link"></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-            <article>
-              <div class="icon-holder">
-                <span class="icon-gear"></span>
-              </div>
-              <div class="title-holder">
-                <h5>Customization</h5>
-              </div>              
-              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-              <a href="#" class="article-link"></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-            <article>
-              <div class="icon-holder">
-                <span class="icon-folder"></span>
-              </div>
-              <div class="title-holder">
-                <h5>Marketing</h5>
-              </div>
-              <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-              <a href="#" class="article-link"></a>
-            </article>
-          </div>
-        </div>
-      </div>
-      <section class="realization">
-        <div class="container">
+      <main>
+        <div class="container we-do">
           <div class="row">
-            <div class="col-12"> 
-              <div class="common-title-section">
+            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
+              <article>
+                <div class="icon-holder">
+                  <span class="icon-pencil"></span>
+                </div>
                 <div class="title-holder">
-                  <h3>Waxom is Realization of your Ideas.</h3>
+                  <h5>Web & App Design</h5>
+                </div> 
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <a href="#" class="article-link"></a>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
+              <article>
+                <div class="icon-holder">
+                  <span class="icon-stack"></span>
                 </div>
-                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              </div>
-              <div class="realization-img-holder">
-                <img src="images/three-in-one.png" alt="portfolio template example photos">
-              </div>
-            </div>
-          </div>
-        </div>
-        <footer class="common-gradient-section">
-          <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
-            <div class="text-center text-sm-left mr-sm-3 mr-md-0">
-              <h3><span>Waxom</span> Multipurpose WordPress Theme</h3>
-              <p>Don't Forget to Rate the Template. Thanks so much!</p>
-            </div>
-            <div class=" mt-3 mt-sm-0">
-              <button class="btn btn-light text-white" type="button">Purchase Now</button>
-            </div>
-          </div>
-        </footer>
-      </section>
-      <section class="latest-work">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="common-title-section">
                 <div class="title-holder">
-                  <h3>Our Latest Projects.</h3>
-                </div>
-                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              </div>
+                  <h5>Development</h5>
+                </div> 
+                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+                <a href="#" class="article-link"></a>
+              </article>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center">
-              <ul class="filter d-flex flex-column flex-sm-row justify-content-around">
-                <li class="active"><a  href="#">All</a></li>
-                <li><a href="#">Web Design</a></li>
-                <li><a href="#">Mobile App</a></li>
-                <li><a href="#">Illustaration</a></li>
-                <li><a href="#">Photography</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-4 common-card">
-              <div class="card-img-holder">
-                <img src="images/telephon.jpg" alt="telephon in hand">
-                <div class="card-img-hover-block">
-                  <a href="#"><span class="icon-link"></span></a>
-                  <a href="#"><span class="icon-search"></span></a>
+            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
+              <article>
+                <div class="icon-holder">
+                  <span class="icon-gear"></span>
                 </div>
-              </div>
-              <div class="common-card-title triangle-for-card">
-                <div class="heading-holder">
-                  <h6>Claritas Etiam Processus</h6>
-                </div>
-                <div class="card-content">
-                  <p>Photography, Nature</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 common-card">
-              <div class="card-img-holder">
-                <img src="images/mountains.jpg" alt="mountains">
-                <div class="card-img-hover-block">
-                  <a href="#"><span class="icon-link"></span></a>
-                  <a href="#"><span class="icon-search"></span></a>
-                </div>
-              </div>
-              <div class="common-card-title triangle-for-card">
-                <div class="heading-holder">
-                  <h6>Quam Nutamus Farum</h6>
-                </div>
-                <div class="card-content">
-                  <p>Photography, Nature</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 common-card">
-              <div class="card-img-holder">
-                <img src="images/book.jpg" alt="book">
-                <div class="card-img-hover-block">
-                  <a href="#"><span class="icon-link"></span></a>
-                  <a href="#"><span class="icon-search"></span></a>
-                </div>
-              </div>
-              <div class="common-card-title triangle-for-card">
-                <div class="heading-holder">
-                  <h6>Usus Legentis Videntur</h6>
-                </div>                  
-                <div class="card-content">
-                  <p>Photography, Holiday</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 common-card" >
-              <div class="card-img-holder">
-                <img src="images/birds.jpg" alt="birds">
-                <div class="card-img-hover-block">
-                  <a href="#"><span class="icon-link"></span></a>
-                  <a href="#"><span class="icon-search"></span></a>
-                </div>
-              </div>
-              <div class="common-card-title triangle-for-card">
-                <div class="heading-holder">
-                  <h6>Claritas Etiam Processus</h6>
-                </div>
-                <div class="card-content">
-                  <p>Photography, Nature</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 common-card">
-              <div class="card-img-holder">
-                <img src="images/book2.jpg" alt="book2">
-                <div class="card-img-hover-block">
-                  <a href="#"><span class="icon-link"></span></a>
-                  <a href="#"><span class="icon-search"></span></a>
-                </div>
-              </div>
-              <div class="common-card-title triangle-for-card">
-                <div class="heading-holder">
-                  <h6>Quam Nutamus Farum</h6>
-                </div>
-                <div class="card-content">
-                  <p>Graphic Design, Mock-Up</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 common-card">
-              <div class="card-img-holder">
-                <img src="images/mountains2.jpg" alt="mountains2">
-                <div class="card-img-hover-block">
-                  <a href="#"><span class="icon-link"></span></a>
-                  <a href="#"><span class="icon-search"></span></a>
-                </div>
-              </div>
-              <div class="common-card-title triangle-for-card">
-                <div class="heading-holder">
-                  <h6>Usus Legentis Videntur</h6>
-                </div>
-                <div class="card-content">
-                  <p>Photography, Holiday</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center btn-holder">
-            <button type="button" class="btn btn-light text-white">LOAD MORE</button>
-          </div>
-        </div>
-      </section>
-      <div class="video-rpesentation common-filter-section" style="background-image: url('images/presentation.jpg')">
-        <div class="container">
-          <div class="row">
-            <div class="video-content common-slider-section">
-              <a href="#" class="play"><span class="icon-play"></span></a>
-              <h2>Waxom Video Presentation</h2>
-              <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="for-mobile">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-5 align-self-end">
-              <img src="images/iPhone-in-hand.jpg" alt="iPhone-in-hand">
-            </div>
-            <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
-              <div class="for-mobile-title">
-                <h3>Excellent for Mobile Devices.</h3>
-              </div>
-              <div class="for-mobile-content">
-                <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-              </div>
-              <ul class="ul-list">
-                <li>Nam liber tempor cum soluta nobis eleifend option;</li>
-                <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-                <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-                <li>Investigationes demonstraverunt lectores</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="common-gradient-section">
-        <div class="container">
-          <div class="row we-reached justify-content-around">
-            <div class="col-5 col-md-2 common-decor-section">
-              <div class="d-flex flex-column text-center">
-                <span class="icon-users"></span>
-                <span class="number">3587</span>
-                <span class="description">Satisfied Clients</span>
-              </div>
-            </div>
-            <div class="col-5 col-md-2 common-decor-section">
-              <div class="d-flex flex-column text-center">
-                <span class="icon-users"></span>
-                <span class="number">207</span>
-                <span class="description">Cups of coffee</span>
-              </div>
-            </div>
-            <div class="col-5 col-md-2 common-decor-section">
-              <div class="d-flex flex-column text-center">
-                <span class="icon-bubble"></span>
-                <span class="number">2500</span>
-                <span class="description">Blog posts</span>
-              </div>
-            </div>
-            <div class="col-5 col-md-2 common-decor-section">
-              <div class="d-flex flex-column text-center">
-                <span class="icon-heart"></span>
-                <span class="number">873</span>
-                <span class="description">Likes</span>
-              </div>
-            </div>
-            <div class="col-5 col-md-2 common-decor-section">
-              <div class="d-flex flex-column text-center">
-                <span class="icon-basecamp"></span>
-                <span class="number">900</span>
-                <span class="description">We launched</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="recent-posts">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="common-title-section">
                 <div class="title-holder">
-                  <h3>Recent Posts.</h3>
-                </div>
-                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-              </div>
+                  <h5>Customization</h5>
+                </div>              
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <a href="#" class="article-link"></a>
+              </article>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-               <div class="posts-slider">
-                  <div class="slider-item">
-                    <article class="slider-card">
-                      <div class="card-img-holder">
-                        <img src="images/legs.jpg" alt="legs">
-                        <div class="article-img-date">
-                          <span class="date">30</span>
-                          <span class="month">Sep.</span>
-                        </div>
-                      </div>
-                      <div class="article-card-title">
-                        <div class="heading-title">
-                          <h6>Lorem ipsum dolor sit amet</h6>
-                        </div>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#" class="read-more">Read more</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="slider-item">
-                    <article class="slider-card">
-                      <div class="card-img-holder">
-                        <img src="images/notebook.jpg" alt="notebook">
-                        <div class="article-img-date">
-                          <span class="date">30</span>
-                          <span class="month">Sep.</span>
-                        </div>
-                      </div>
-                      <div class="article-card-title">
-                        <div class="heading-title">
-                          <h6>Lorem ipsum dolor sit amet</h6>
-                        </div>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#" class="read-more">Read more</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="slider-item">
-                    <article class="slider-card">
-                      <div class="card-img-holder">
-                        <img src="images/ship.jpg" alt="ship">
-                        <div class="article-img-date">
-                          <span class="date">30</span>
-                          <span class="month">Sep.</span>
-                        </div>
-                      </div>
-                      <div class="article-card-title">
-                        <div class="heading-title">
-                          <h6>Lorem ipsum dolor sit amet</h6>
-                        </div>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#" class="read-more">Read more</a>
-                      </div>
-                    </article>
-                  </div>
-                  <div class="slider-item">
-                    <article class="slider-card">
-                      <div class="card-img-holder">
-                        <img src="images/notebook.jpg" alt="book2">
-                        <div class="article-img-date">
-                          <span class="date">30</span>
-                          <span class="month">Sep.</span>
-                        </div>
-                      </div>
-                      <div class="article-card-title">
-                        <div class="heading-title">
-                          <h6>Lorem ipsum dolor sit amet</h6>
-                        </div>
-                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                        <a href="#" class="read-more">Read more</a>
-                      </div>
-                    </article>
-                  </div>
-              </div>
-              <div class="for-arrows-box d-flex justify-content-center">
-                    
-              </div>
-              <div class="help"></div>
+            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
+              <article>
+                <div class="icon-holder">
+                  <span class="icon-folder"></span>
+                </div>
+                <div class="title-holder">
+                  <h5>Marketing</h5>
+                </div>
+                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
+                <a href="#" class="article-link"></a>
+              </article>
             </div>
           </div>
         </div>
-      </section>
-      <div class="emblems" style="background-image: url('images/emblems-bg.jpg')">
-        <div class="container">
-          <div class="row emblem-indent ">
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-              <div class="emblem-holder">
-                  <img src="images/the-barber.png" alt="barber haircat emblem">
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-              <div class="emblem-holder">
-                  <img src="images/delicious.png" alt="delicious emblem">
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-              <div class="emblem-holder">
-                  <img src="images/designers.png" alt="designers emblem ">
-              </div>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-              <div class="emblem-holder">
-                  <img src="images/royal.png" alt="cafe royal emblem">
+        <section class="realization">
+          <div class="container">
+            <div class="row">
+              <div class="col-12"> 
+                <div class="common-title-section">
+                  <div class="title-holder">
+                    <h3>Waxom is Realization of your Ideas.</h3>
+                  </div>
+                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
+                <div class="realization-img-holder">
+                  <img src="images/three-in-one.png" alt="portfolio template example photos">
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <section class="our-info">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="logo-holder">
-                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="waxom"></a>
+          <footer class="common-gradient-section">
+            <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
+              <div class="text-center text-sm-left mr-sm-3 mr-md-0">
+                <h3><span>Waxom</span> Multipurpose WordPress Theme</h3>
+                <p>Don't Forget to Rate the Template. Thanks so much!</p>
               </div>
-              <div class="logo-title">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+              <div class=" mt-3 mt-sm-0">
+                <button class="btn btn-light text-white" type="button">Purchase Now</button>
               </div>
-              <a href="#" class="read-more">Read more</a>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="heading-holder">
-                <h4>Recent Posts</h4>
+          </footer>
+        </section>
+        <section class="latest-work">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="common-title-section ">
+                  <div class="title-holder">
+                    <h3>Our Latest Projects.</h3>
+                  </div>
+                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
               </div>
-              <ul class="our-info-list">
-                <li class="post">
-                  <div class="post-date">
-                    <p><time>September 08, 2015</time></p>
-                  </div>
-                  <div class="post-content">
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                  </div>
-                  <a class="post-link" href="#"></a>
-                </li>
-                <li class="post">
-                  <div class="post-date">
-                    <p><time>September 08, 2015</time></p>
-                  </div>
-                  <div class="post-content">
-                    <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-                  </div>
-                  <a class="post-link" href="#"></a>
-                </li>
-                <li class="post">
-                  <div class="post-date">
-                    <p><time>September 08, 2015</time></p>
-                  </div>
-                  <div class="post-content">
-                    <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
-                  </div>
-                  <a class="post-link" href="#"></a>
-                </li>
-              </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="heading-holder">
-                <h4>Our Twitter</h4>
+            <div class="row">
+              <div class="col-12 d-flex justify-content-center">
+                <ul class="filter d-flex flex-column flex-sm-row justify-content-around">
+                  <li class="active"><a  href="#">All</a></li>
+                  <li><a href="#">Web Design</a></li>
+                  <li><a href="#">Mobile App</a></li>
+                  <li><a href="#">Illustaration</a></li>
+                  <li><a href="#">Photography</a></li>
+                </ul>
               </div>
-              <ul class="our-info-list">
-                <li>
-                  <div class="twitter-content">
-                    <p><span class="twitter-content-span">@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
-                  </div>
-                  <span class="when">3 mins ago</span>
-                </li>
-                <li>
-                  <div class="twitter-content">
-                    <p>Mirum est <span class="twitter-content-span">#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
-                  </div>
-                  <span class="when">5 hours ago</span>
-                </li>
-                <li>
-                  <div class="twitter-content">
-                    <p>Soluta nobis option  <a href="#">bit.ly/1Hniso7</a></p>
-                  </div>
-                  <span class="when">20 days ago</span>
-                </li>
-              </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-3">
-              <div class="heading-holder">
-                <h4>Dribbble Widget</h4>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4 common-card ">
+                <div class="card-img-holder">
+                  <img src="images/telephon.jpg" alt="telephon in hand">
+                  <div class="card-img-hover-block">
+                    <a href="#"><span class="icon-link"></span></a>
+                    <a href="#"><span class="icon-search"></span></a>
+                  </div>
+                </div>
+                <div class="common-card-title triangle-for-card">
+                  <div class="heading-holder">
+                    <h6>Claritas Etiam Processus</h6>
+                  </div>
+                  <div class="card-content">
+                    <p>Photography, Nature</p>
+                  </div>
+                </div>
               </div>
-              <div class="row mt-4">
-                <div class="col-6 mb-4">
-                  <img src="images/footer1.jpg" alt="">
+              <div class="col-12 col-md-6 col-lg-4 common-card">
+                <div class="card-img-holder">
+                  <img src="images/mountains.jpg" alt="mountains">
+                  <div class="card-img-hover-block">
+                    <a href="#"><span class="icon-link"></span></a>
+                    <a href="#"><span class="icon-search"></span></a>
+                  </div>
                 </div>
-                <div class="col-6">
-                    <img src="images/footer2.jpg" alt="">
+                <div class="common-card-title triangle-for-card">
+                  <div class="heading-holder">
+                    <h6>Quam Nutamus Farum</h6>
+                  </div>
+                  <div class="card-content">
+                    <p>Photography, Nature</p>
+                  </div>
                 </div>
-                <div class="col-6">
-                    <img src="images/footer3.jpg" alt="">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 common-card">
+                <div class="card-img-holder">
+                  <img src="images/book.jpg" alt="book">
+                  <div class="card-img-hover-block">
+                    <a href="#"><span class="icon-link"></span></a>
+                    <a href="#"><span class="icon-search"></span></a>
+                  </div>
                 </div>
-                <div class="col-6">
-                    <img src="images/footer4.jpg" alt="">
+                <div class="common-card-title triangle-for-card">
+                  <div class="heading-holder">
+                    <h6>Usus Legentis Videntur</h6>
+                  </div>                  
+                  <div class="card-content">
+                    <p>Photography, Holiday</p>
+                  </div>
                 </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 common-card" >
+                <div class="card-img-holder">
+                  <img src="images/birds.jpg" alt="birds">
+                  <div class="card-img-hover-block">
+                    <a href="#"><span class="icon-link"></span></a>
+                    <a href="#"><span class="icon-search"></span></a>
+                  </div>
+                </div>
+                <div class="common-card-title triangle-for-card">
+                  <div class="heading-holder">
+                    <h6>Claritas Etiam Processus</h6>
+                  </div>
+                  <div class="card-content">
+                    <p>Photography, Nature</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 common-card">
+                <div class="card-img-holder">
+                  <img src="images/book2.jpg" alt="book2">
+                  <div class="card-img-hover-block">
+                    <a href="#"><span class="icon-link"></span></a>
+                    <a href="#"><span class="icon-search"></span></a>
+                  </div>
+                </div>
+                <div class="common-card-title triangle-for-card">
+                  <div class="heading-holder">
+                    <h6>Quam Nutamus Farum</h6>
+                  </div>
+                  <div class="card-content">
+                    <p>Graphic Design, Mock-Up</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 common-card">
+                <div class="card-img-holder">
+                  <img src="images/mountains2.jpg" alt="mountains2">
+                  <div class="card-img-hover-block">
+                    <a href="#"><span class="icon-link"></span></a>
+                    <a href="#"><span class="icon-search"></span></a>
+                  </div>
+                </div>
+                <div class="common-card-title triangle-for-card">
+                  <div class="heading-holder">
+                    <h6>Usus Legentis Videntur</h6>
+                  </div>
+                  <div class="card-content">
+                    <p>Photography, Holiday</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center btn-holder">
+              <button type="button" class="btn btn-light text-white">LOAD MORE</button>
+            </div>
+          </div>
+        </section>
+        <div class="video-repesentation common-filter-section" style="background-image: url('images/presentation.jpg')">
+          <div class="container">
+            <div class="row">
+              <div class="video-content common-slider-section">
+                <a href="#" class="play"><span class="icon-play"></span></a>
+                <h2>Waxom Video Presentation</h2>
+                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
               </div>
             </div>
           </div>
         </div>
-      </section>
+        <section class="for-mobile">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-5 align-self-end">
+                <img src="images/iPhone-in-hand.jpg" alt="iPhone-in-hand">
+              </div>
+              <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                <div class="for-mobile-title">
+                  <h3>Excellent for Mobile Devices.</h3>
+                </div>
+                <div class="for-mobile-content">
+                  <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                </div>
+                <ul class="ul-list">
+                  <li>Nam liber tempor cum soluta nobis eleifend option;</li>
+                  <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
+                  <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
+                  <li>Investigationes demonstraverunt lectores</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="common-gradient-section">
+          <div class="container">
+            <div class="row we-reached justify-content-around">
+              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
+                <div class="d-flex flex-column text-center">
+                  <span class="icon-users"></span>
+                  <span class="number">3587</span>
+                  <span class="description">Satisfied Clients</span>
+                </div>
+              </div>
+              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
+                <div class="d-flex flex-column text-center">
+                  <span class="icon-users"></span>
+                  <span class="number">207</span>
+                  <span class="description">Cups of coffee</span>
+                </div>
+              </div>
+              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
+                <div class="d-flex flex-column text-center">
+                  <span class="icon-bubble"></span>
+                  <span class="number">2500</span>
+                  <span class="description">Blog posts</span>
+                </div>
+              </div>
+              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
+                <div class="d-flex flex-column text-center">
+                  <span class="icon-heart"></span>
+                  <span class="number">873</span>
+                  <span class="description">Likes</span>
+                </div>
+              </div>
+              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
+                <div class="d-flex flex-column text-center">
+                  <span class="icon-basecamp"></span>
+                  <span class="number">900</span>
+                  <span class="description">We launched</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="recent-posts">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="common-title-section">
+                  <div class="title-holder">
+                    <h3>Recent Posts.</h3>
+                  </div>
+                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                 <div class="posts-slider">
+                    <div class="slider-item">
+                      <article class="slider-card">
+                        <div class="card-img-holder">
+                          <img src="images/legs.jpg" alt="legs">
+                          <div class="article-img-date">
+                            <span class="date">30</span>
+                            <span class="month">Sep.</span>
+                          </div>
+                        </div>
+                        <div class="article-card-title">
+                          <div class="heading-title">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                          </div>
+                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                          <a href="#" class="read-more">Read more &#9658;</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="slider-item">
+                      <article class="slider-card">
+                        <div class="card-img-holder">
+                          <img src="images/notebook.jpg" alt="notebook">
+                          <div class="article-img-date">
+                            <span class="date">30</span>
+                            <span class="month">Sep.</span>
+                          </div>
+                        </div>
+                        <div class="article-card-title">
+                          <div class="heading-title">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                          </div>
+                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                          <a href="#" class="read-more">Read more &#9658;</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="slider-item">
+                      <article class="slider-card">
+                        <div class="card-img-holder">
+                          <img src="images/ship.jpg" alt="ship">
+                          <div class="article-img-date">
+                            <span class="date">30</span>
+                            <span class="month">Sep.</span>
+                          </div>
+                        </div>
+                        <div class="article-card-title">
+                          <div class="heading-title">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                          </div>
+                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                          <a href="#" class="read-more">Read more &#9658;</a>
+                        </div>
+                      </article>
+                    </div>
+                    <div class="slider-item">
+                      <article class="slider-card">
+                        <div class="card-img-holder">
+                          <img src="images/notebook.jpg" alt="book2">
+                          <div class="article-img-date">
+                            <span class="date">30</span>
+                            <span class="month">Sep.</span>
+                          </div>
+                        </div>
+                        <div class="article-card-title">
+                          <div class="heading-title">
+                            <h6>Lorem ipsum dolor sit amet</h6>
+                          </div>
+                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                          <a href="#" class="read-more">Read more &#9658;</a>
+                        </div>
+                      </article>
+                    </div>
+                </div>
+                <div class="for-arrows-box d-flex justify-content-center">
+                      
+                </div>
+                <div class="help"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="emblems" style="background-image: url('images/emblems-bg.jpg')">
+          <div class="container">
+            <div class="row emblem-indent ">
+              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="emblem-holder">
+                    <img src="images/the-barber.png" alt="barber haircat emblem">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="emblem-holder">
+                    <img src="images/delicious.png" alt="delicious emblem">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="emblem-holder">
+                    <img src="images/designers.png" alt="designers emblem ">
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
+                <div class="emblem-holder">
+                    <img src="images/royal.png" alt="cafe royal emblem">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="our-info">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="logo-holder">
+                  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="waxom"></a>
+                </div>
+                <div class="logo-title">
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
+                </div>
+                <a href="#" class="read-more">Read more &#9658;</a>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="heading-holder">
+                  <h4>Recent Posts</h4>
+                </div>
+                <ul class="our-info-list">
+                  <li class="post">
+                    <div class="post-date">
+                      <p><time>September 08, 2015</time></p>
+                    </div>
+                    <div class="post-content">
+                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
+                    </div>
+                    <a class="post-link" href="#"></a>
+                  </li>
+                  <li class="post">
+                    <div class="post-date">
+                      <p><time>September 08, 2015</time></p>
+                    </div>
+                    <div class="post-content">
+                      <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
+                    </div>
+                    <a class="post-link" href="#"></a>
+                  </li>
+                  <li class="post">
+                    <div class="post-date">
+                      <p><time>September 08, 2015</time></p>
+                    </div>
+                    <div class="post-content">
+                      <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
+                    </div>
+                    <a class="post-link" href="#"></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="heading-holder">
+                  <h4>Our Twitter</h4>
+                </div>
+                <ul class="our-info-list">
+                  <li>
+                    <div class="twitter-content">
+                      <p><span class="twitter-content-span">@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
+                    </div>
+                    <span class="when">3 mins ago</span>
+                  </li>
+                  <li>
+                    <div class="twitter-content">
+                      <p>Mirum est <span class="twitter-content-span">#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
+                    </div>
+                    <span class="when">5 hours ago</span>
+                  </li>
+                  <li>
+                    <div class="twitter-content">
+                      <p>Soluta nobis option  <a href="#">bit.ly/1Hniso7</a></p>
+                    </div>
+                    <span class="when">20 days ago</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="heading-holder">
+                  <h4>Dribbble Widget</h4>
+                </div>
+                <div class="row mt-4">
+                  <div class="col-6 mb-4">
+                    <img src="images/footer1.jpg" alt="">
+                  </div>
+                  <div class="col-6">
+                      <img src="images/footer2.jpg" alt="">
+                  </div>
+                  <div class="col-6">
+                      <img src="images/footer3.jpg" alt="">
+                  </div>
+                  <div class="col-6">
+                      <img src="images/footer4.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer>
         <div class="container">
           <div class="row">
