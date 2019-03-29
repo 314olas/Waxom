@@ -1,18 +1,9 @@
+@import "common/vendor_styles";
+@import "common/styles";
+@import "common/fonts";
+@import "common/variables";
 
-@import "./common/variables";
-@import "./common/fonts";
+@import "layout/main";
 
-
-@import "./layout/header";
-@import "./layout/main";
-@import "./layout/footer";
-@import "./layout/slider-portfolio-template";
-@import "./layout/posts-slider";
-
-
-@import "./common/slick-theme";
-@import "./common/slick"
-
-//@import "./common/custom-variables";
 
 

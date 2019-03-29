@@ -4,640 +4,581 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>SSA Group</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
-    <div id="wrapper">
-      <div class="common-filter-section for-bg-block" style="background-image: url('images/header.jpg')">
-        <header class="pt-3">
+    <header>
+      <nav class="navbar affix" id="slide-nav">
+
+        <div class="navigation container">
+          <div class="navbar-header col-sm-2 col-md-2 col-xs-12">
+            <button type="button" class="navbar-toggle" data-target="#menu_nav">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a id="logo-img" href="/" class="menu-logo"><img src="images/logo-sm.png?v=1.0" alt="logo"></a>
+          </div>
+          <!--Nav links-->
+          <div class="navbar-collapse col-sm-10 col-md-10" id="menu_nav">
+            <a href="/" class="closs"><i class="fa fa-times"></i></a>
+            <ul class="nav navbar-nav">
+              <li class="dropdown top-level ">
+                <a href="/#about">about</a>
+                <div></div>
+                <ul class="dropdown-menu first-level">
+                  <li><a href="/our-team">our team</a></li>
+                  <li><a href="/#partner">clients</a></li>
+                  <li><a href="/#testimonial">testimonials</a></li>
+                  <li><a href="/#certifications">certifications</a></li>
+                  <li class="dropdown">
+                    <a href="/#price">engagement models</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/development-services">Development services</a></li>
+                      <li><a href="/technical-support-packages">Technical support packages</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="/public-holidays">public holidays</a></li>
+                </ul>
+              </li>
+              <li class="dropdown top-level ">
+                <a href="/news">media</a>
+                <div></div>
+                <ul class="dropdown-menu first-level">
+                  <li><a href="/news">news</a></li>
+                  <li><a href="/photo-gallery">gallery</a></li>
+                  <li><a href="/downloads">downloads</a></li>
+                </ul>
+              </li>
+              <li class="top-level "><a href="/#services">services</a></li>
+              <li class="top-level"><a href="/#departments">departments</a></li>
+              <li class="dropdown top-level ">
+                <a href="/vacancies">career</a>
+                <ul class="dropdown-menu">
+                  <li><a href="/vacancies">vacancies</a></li>
+                  <li><a href="/career-path">career path</a></li>
+                </ul>
+              </li>
+              <li class="top-level active"><a href="/contacts">contacts</a></li>
+            </ul>
+          </div>
+
+
+          <!--/.navbar-collapse-->
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contacts-page">
+        <section class="contact-us">
+          <img src="images/bg.jpg" alt="">
           <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div>
-                  <nav class="navbar navbar-expand-lg navbar-light">
-                    <a class="navbar-brand" href="#"><h1><img src="images/logo.png" alt="waxom"></h1></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end nav-position" id="navbarSupportedContent">
-                      <ul class="navbar-nav mr-4">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Shortcodes</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
-                        </li>
-                      </ul>
-                      <ul class="navbar-nav position-relative">
-                        <li class="nav-item">
-                          <a class="nav-link" href="#"><span class="icon-basket"></span></a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" id="search" href="#"><span class="icon-search"></span></a>
-                          <form action="#" class="search-form" id="search-form">
-                            <input  type="text" id="search-input" placeholder="Search">
-                          </form>
-                        </li>
+            <div class="row" >
+              <div class="col-12 d-flex justify-content-center ">
+                <div class="wrapper-block">
+                  <div class="contact-us-info ">
+                    <div class="title-holder">
+                      <h1>Contact us</h1>
+                    </div>
+                    <div class="block-icon-title">
+                      <h3>Sales Department</h3>
+                    </div>
+                    <div class="block-icon">
+                      <div class="holder-icon">
+                        <span class="icon-tel"></span>
+                      </div>
+                      <ul class="content-list">
+                        <li><a href="tel:+18882744492">+1 888 274 44 92</a></li>
+                        <li><a href="tel:+46812111478">+46 81 211 14 78</a></li>
+                        <li><a href="tel:+380947100091">+380 94 710 00 91</a></li>
                       </ul>
                     </div>
-                  </nav>
+                    <div class="block-icon mb-3">
+                      <div class="holder-icon">
+                        <span class="icon-mail"></span>
+                      </div>
+                      <ul class="content-list">
+                        <li><a href="mailto:sales@ssa.group">sales@ssa.group</a></li>
+                        <li><a href="mailto:contact@ssa.group">contact@ssa.group</a></li>
+                      </ul>
+                    </div>
+                    <div class="block-icon-title">
+                      <h3>Recruitment Department</h3>
+                    </div>
+                    <div class="block-icon">
+                      <div class="holder-icon">
+                        <span class="icon-tel"></span>
+                      </div>
+                      <a href="tel:+380577649130">+380 57 764 91 30</a>
+                    </div>
+                    <div class="block-icon">
+                      <div class="holder-icon">
+                        <span class="icon-mail"></span>
+                      </div>
+                      <a href="mailto:hr@ssa.group">hr@ssa.group</a>
+                    </div>
+                  </div>
+                  <form action="#" class="contact-form">
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Name" name="name">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="text" placeholder="Phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" type="email" placeholder="Email" name="email">
+                    </div>
+                    <div class="form-group position-relative">
+                      <textarea class="form-control" name="describe your idea" placeholder="Describe your idea" rows="5" ></textarea>
+                      <div class="add-files">
+                        <span class="input-file-success" id="inputFileSuccess"></span>
+                        <input type="file" name="file" id="file" class="input-file">
+                        <label for="file"><span class="icon-clip"></span></label>
+                      </div>
+                    </div>
+                    <div class="form-group d-flex">
+                      <button type="submit" class="btn btn-danger flex-grow-1">Send Request</button>
+                    </div>
+                  </form>
                 </div>
               </div>
             </div>
           </div>
-        </header>
-        <div class="container">
-          <div class="row justify-content-center">
-          <div class="col-12 col-md-10 ">
-            <div class="slider-portfolio-template mb-5">
-            <div class="slider-item">
-              <div class="item-holder common-slider-section">
-                <h2>Unique and Modern Design</h2>
-                <h2><span>Portfolio PSD Template</span></h2>
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <div class="btn-holder">
-                  <button class="btn btn-light text-white" type="button">Get Started</button>
+        </section>
+        <section class="location">
+          <div class="common-title-holder">
+            <h2>our location</h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 col-lg-4 mb-5">
+                <div class="location-item ">
+                  <div class="img-holder" style="background-image: url('images/img-1a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <ul class="content-list">
+                      <li><p><strong>Megapolis Office Center</strong></p></li>
+                      <li><p>Office 607</p></li>
+                      <li><adress>Moskovskiy pr. 179-B</adress></li>
+                      <li><adress>Kharkiv, 61068, Ukraine</adress></li>
+                    </ul>
+                    <div class="location-icon">
+                      <span class="icon-location"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="slider-item">
-              <div class="item-holder common-slider-section">
-                <h2>Unique and Modern Design</h2>
-                <h2><span>Portfolio PSD Template</span></h2>
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <div class="btn-holder">
-                  <button class="btn btn-light text-white" type="button">Get Started</button>
+              <div class="col-sm-6 col-lg-4 mb-5">
+                <div class="location-item">
+                  <div class="img-holder" style="background-image: url('images/img-2a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <ul class="content-list">
+                      <li><p><strong>Capitalist Office Center</strong></p></li>
+                      <li><p>Office 603</p></li>
+                      <li><adress>Nauki pr. 27-B</adress></li>
+                      <li><adress>Kharkiv, 61068, Ukraine</adress></li>
+                    </ul>
+                    <div class="location-icon">
+                      <span class="icon-location"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="slider-item">
-              <div class="item-holder common-slider-section">
-                <h2>Unique and Modern Design</h2>
-                <h2><span>Portfolio PSD Template</span></h2>
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
-                <div class="btn-holder">
-                  <button class="btn btn-light text-white" type="button">Get Started</button>
+              <div class="col-sm-6 col-lg-4 mb-5">
+                <div class="location-item">
+                  <div class="img-holder" style="background-image: url('images/img-3a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <ul class="content-list">
+                      <li><p><strong>Poema Office Center</strong></p></li>
+                      <li><p>Office 26, Floor 10</p></li>
+                      <li><adress>Teatral'nyi Ln. 4</adress></li>
+                      <li><adress>Kharkiv, 61057, Ukraine</adress></li>
+                    </ul>
+                    <div class="location-icon">
+                      <span class="icon-location"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="location-item">
+                  <div class="img-holder" style="background-image: url('images/img-4a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <ul class="content-list">
+                      <li><p><strong>Prizma Office Center</strong></p></li>
+                      <li><p>Office 10-02</p></li>
+                      <li><adress>TGinki str.7</adress></li>
+                      <li><adress>Dnipro, 49000, Ukraine</adress></li>
+                    </ul>
+                    <div class="location-icon">
+                      <span class="icon-location"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 mb-5 mb-md-0">
+                <div class="location-item">
+                  <div class="img-holder" style="background-image: url('images/img-5a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <ul class="content-list">
+                      <li><p><strong>Guliver Office Center</strong></p></li>
+                      <li><p>Office 11, Floor 12</p></li>
+                      <li><adress>Sportyvna Square, 1a</adress></li>
+                      <li><adress>Kyiv, 01023, Ukraine</adress></li>
+                    </ul>
+                    <div class="location-icon">
+                      <span class="icon-location"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="location-item">
+                  <div class="img-holder" style="background-image: url('images/img-6a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <ul class="content-list">
+                      <li><p><strong>IT Cloud Academy</strong></p></li>
+                      <li><p><strong>Solaris Business Center</strong></p></li>
+                      <li><adress>Office 5, Floor 12</adress></li>
+                      <li><adress>Otakara Iarosha str.18</adress></li>
+                      <li><adress>Kharkiv, 61000, Ukraine</adress></li>
+                    </ul>
+                    <div class="location-icon">
+                      <span class="icon-location"></span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </section>
+        <section class="our-team">
+          <div class="common-title-holder">
+            <h2>OUR TEAM</h2>
           </div>
-        </div>
+          <div class="container">
+            <ul class="nav nav-tabs" id="teamTab" role="teamtab">
+              <li class="nav-item">
+                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#headsOfDepartments" role="tab" aria-controls="headsOfDepartments" aria-selected="true">heads of departments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#businessDevelopment" role="tab" aria-controls="businessDevelopment" aria-selected="false">business development</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#recruiters" role="tab" aria-controls="recruiters" aria-selected="false">recruiters</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="teamTabContent">
+              <div class="tab-pane fade show active" id="headsOfDepartments" role="tabpanel" aria-labelledby="headsOfDepartments-tab">
+                <div class="row">
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Frontend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Pavlo.jpg" alt="pavlo photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Pavlo Pochuyev</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Denis.jpg" alt="denis photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Denis Ryabukha</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Mobile</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Dmytro.jpg" alt="dmytro photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Dmytro Kuklenko</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend & SSA Ecommerce</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Alexandr.jpg" alt="alexandr photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Sharamko Alexandr</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA DESIGN</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Alexey.jpg" alt="alexey photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Alexey Ivanov</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Data & Desktop</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Evgeniy.jpg" alt="evgeniy photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Evgeniy Antsybor</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Dmytro%20(2).jpg" alt="dmytro photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Dmytro Obolonyk</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Vladimir.jpg" alt="vladimir photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Vladimir Udalov</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="businessDevelopment" role="tabpanel" aria-labelledby="businessDevelopment-tab">
+                <div class="row">
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Frontend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Pavlo.jpg" alt="pavlo photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Pavlo Pochuyev</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Denis.jpg" alt="denis photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Denis Ryabukha</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Mobile</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Dmytro.jpg" alt="dmytro photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Dmytro Kuklenko</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="recruiters" role="tabpanel" aria-labelledby="recruiters-tab">
+                <div class="row">
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend & SSA Ecommerce</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Alexandr.jpg" alt="alexandr photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Sharamko Alexandr</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA DESIGN</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Alexey.jpg" alt="alexey photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Alexey Ivanov</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Data & Desktop</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Evgeniy.jpg" alt="evgeniy photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Evgeniy Antsybor</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Dmytro%20(2).jpg" alt="dmytro photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Dmytro Obolonyk</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="img-holder">
+                      <img src="images/HeadsOfDepartment/Vladimir.jpg" alt="vladimir photo">
+                    </div>
+                    <div class="name-holder">
+                      <p><strong>Vladimir Udalov</strong></p>
+                    </div>
+                    <a href="#"><span class="icon-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <section id="newsletter" class="space overlay bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 main-heading">
+            <h2>Get <span>Updates</span></h2>
+            <p>subscribe to our newsletter and get latest news from us</p>
+          </div>
+          <div class="col-md-6">
+            <div id="subscribeTarget">
+              <form action="/umbraco/Surface/Forms/Subscribe?Length=5" class="subscribe " data-ajax="true" data-ajax-complete="onSubscribeComplete" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="onSubscribeSuccess" data-ajax-update="#subscribeTarget" id="subscribeForm" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="8lPOaNLaBVaeGqEjGLd8Dwq4o9-iLp6bP48w0Ztvps0pQzDGz79m_4_S5e0S0v2bi7UklhJ3N13jPifHPOMgNqo9OCcgWmixSDVCLzob-rM1"><input data-val="true" data-val-number="The field RepositoryId must be a number." data-val-required="The RepositoryId field is required." id="RepositoryId" name="RepositoryId" type="hidden" value="2915"><input id="class_subscribe" name="Class" type="hidden" value=""><input class="subscribe-email" data-val="true" data-val-email="The Email field is not a valid e-mail address." data-val-required="The Email field is required." id="Email" name="Email" placeholder="Enter your email address" type="email" value="">    <div class="subscribe-email-error">
+                <span class="field-validation-valid text-danger" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+              </div>
+                <input id="subscribe" class="btn btn-skin" type="submit" value="Subscribe now" data-valin="OK" data-valout="Subscribe now">
+                <div class="cancel">x</div>
+                <div id="subscribeRecaptchaContainer">
+                  <div id="subscribeRecaptcha" class="g-recaptcha" data-recaptcha-key="6LfPs3cUAAAAACSKFzl1u2j4YGEdD8SYpDznrK4A" data-init="true"></div>
+                  <div class="text-danger recaptcha-validation-error">
+                    <span></span>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
-      <main>
-        <div class="container we-do">
-          <div class="row">
-            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-              <article>
-                <div class="icon-holder">
-                  <span class="icon-pencil"></span>
-                </div>
-                <div class="title-holder">
-                  <h5>Web & App Design</h5>
-                </div> 
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-                <a href="#" class="article-link"></a>
-              </article>
+    </section>
+    <footer id="footer" class="space overlay bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 footer-block text-center">
+            <div id="social">
+              <ul class="social">
+                <li>
+                  <a href="//www.facebook.com/SSAdevelopment" target="_blank" rel="noopener noreferrer nofollow">
+                                <span class="icon center radius-2x facebook">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="//www.linkedin.com/company/ssadevelopment/" target="_blank" rel="noopener noreferrer nofollow">
+                                <span class="icon center radius-2x linkedin">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="//www.instagram.com/ssadevelopment/" target="_blank" rel="noopener noreferrer nofollow">
+                                <span class="icon center radius-2x instagram">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="//twitter.com/SSAdevelopment" target="_blank" rel="noopener noreferrer nofollow">
+                                <span class="icon center radius-2x twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="//www.flickr.com/photos/ssagroup" target="_blank" rel="noopener noreferrer nofollow">
+                                <span class="icon center radius-2x flickr">
+                                    <i class="fa fa-flickr" aria-hidden="true"></i>
+                                </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="//www.youtube.com/channel/UCOnYuavCSVlqfejuZRWUxDg" target="_blank" rel="noopener noreferrer nofollow">
+                                <span class="icon center radius-2x youtube" style="background-color: #ff0000;">
+                                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                                </span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-              <article>
-                <div class="icon-holder">
-                  <span class="icon-stack"></span>
-                </div>
-                <div class="title-holder">
-                  <h5>Development</h5>
-                </div> 
-                <p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
-                <a href="#" class="article-link"></a>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-              <article>
-                <div class="icon-holder">
-                  <span class="icon-gear"></span>
-                </div>
-                <div class="title-holder">
-                  <h5>Customization</h5>
-                </div>              
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-                <a href="#" class="article-link"></a>
-              </article>
-            </div>
-            <div class="col-12 col-md-6 col-lg-3 common-decor-section">
-              <article>
-                <div class="icon-holder">
-                  <span class="icon-folder"></span>
-                </div>
-                <div class="title-holder">
-                  <h5>Marketing</h5>
-                </div>
-                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim.</p>
-                <a href="#" class="article-link"></a>
-              </article>
-            </div>
+
+            <p>© Since 2007 &nbsp;&nbsp;&nbsp; <a style="color: white;" href="/privacy-policy">Privacy Policy</a> &nbsp;&nbsp;&nbsp; <a style="color: white;" href="/general-data-protection-regulation">GDPR</a></p>
+
           </div>
         </div>
-        <section class="realization">
-          <div class="container">
-            <div class="row">
-              <div class="col-12"> 
-                <div class="common-title-section">
-                  <div class="title-holder">
-                    <h3>Waxom is Realization of your Ideas.</h3>
-                  </div>
-                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                </div>
-                <div class="realization-img-holder">
-                  <img src="images/three-in-one.png" alt="portfolio template example photos">
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer class="common-gradient-section">
-            <div class="container d-flex flex-column flex-sm-row justify-content-between align-items-center">
-              <div class="text-center text-sm-left mr-sm-3 mr-md-0">
-                <h3><span>Waxom</span> Multipurpose WordPress Theme</h3>
-                <p>Don't Forget to Rate the Template. Thanks so much!</p>
-              </div>
-              <div class=" mt-3 mt-sm-0">
-                <button class="btn btn-light text-white" type="button">Purchase Now</button>
-              </div>
-            </div>
-          </footer>
-        </section>
-        <section class="latest-work">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="common-title-section ">
-                  <div class="title-holder">
-                    <h3>Our Latest Projects.</h3>
-                  </div>
-                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center">
-                <ul class="filter d-flex flex-column flex-sm-row justify-content-around">
-                  <li class="active"><a  href="#">All</a></li>
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">Mobile App</a></li>
-                  <li><a href="#">Illustaration</a></li>
-                  <li><a href="#">Photography</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-4 common-card ">
-                <div class="card-img-holder">
-                  <img src="images/telephon.jpg" alt="telephon in hand">
-                  <div class="card-img-hover-block">
-                    <a href="#"><span class="icon-link"></span></a>
-                    <a href="#"><span class="icon-search"></span></a>
-                  </div>
-                </div>
-                <div class="common-card-title triangle-for-card">
-                  <div class="heading-holder">
-                    <h6>Claritas Etiam Processus</h6>
-                  </div>
-                  <div class="card-content">
-                    <p>Photography, Nature</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 common-card">
-                <div class="card-img-holder">
-                  <img src="images/mountains.jpg" alt="mountains">
-                  <div class="card-img-hover-block">
-                    <a href="#"><span class="icon-link"></span></a>
-                    <a href="#"><span class="icon-search"></span></a>
-                  </div>
-                </div>
-                <div class="common-card-title triangle-for-card">
-                  <div class="heading-holder">
-                    <h6>Quam Nutamus Farum</h6>
-                  </div>
-                  <div class="card-content">
-                    <p>Photography, Nature</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 common-card">
-                <div class="card-img-holder">
-                  <img src="images/book.jpg" alt="book">
-                  <div class="card-img-hover-block">
-                    <a href="#"><span class="icon-link"></span></a>
-                    <a href="#"><span class="icon-search"></span></a>
-                  </div>
-                </div>
-                <div class="common-card-title triangle-for-card">
-                  <div class="heading-holder">
-                    <h6>Usus Legentis Videntur</h6>
-                  </div>                  
-                  <div class="card-content">
-                    <p>Photography, Holiday</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 common-card" >
-                <div class="card-img-holder">
-                  <img src="images/birds.jpg" alt="birds">
-                  <div class="card-img-hover-block">
-                    <a href="#"><span class="icon-link"></span></a>
-                    <a href="#"><span class="icon-search"></span></a>
-                  </div>
-                </div>
-                <div class="common-card-title triangle-for-card">
-                  <div class="heading-holder">
-                    <h6>Claritas Etiam Processus</h6>
-                  </div>
-                  <div class="card-content">
-                    <p>Photography, Nature</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 common-card">
-                <div class="card-img-holder">
-                  <img src="images/book2.jpg" alt="book2">
-                  <div class="card-img-hover-block">
-                    <a href="#"><span class="icon-link"></span></a>
-                    <a href="#"><span class="icon-search"></span></a>
-                  </div>
-                </div>
-                <div class="common-card-title triangle-for-card">
-                  <div class="heading-holder">
-                    <h6>Quam Nutamus Farum</h6>
-                  </div>
-                  <div class="card-content">
-                    <p>Graphic Design, Mock-Up</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 common-card">
-                <div class="card-img-holder">
-                  <img src="images/mountains2.jpg" alt="mountains2">
-                  <div class="card-img-hover-block">
-                    <a href="#"><span class="icon-link"></span></a>
-                    <a href="#"><span class="icon-search"></span></a>
-                  </div>
-                </div>
-                <div class="common-card-title triangle-for-card">
-                  <div class="heading-holder">
-                    <h6>Usus Legentis Videntur</h6>
-                  </div>
-                  <div class="card-content">
-                    <p>Photography, Holiday</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row justify-content-center btn-holder">
-              <button type="button" class="btn btn-light text-white">LOAD MORE</button>
-            </div>
-          </div>
-        </section>
-        <div class="video-repesentation common-filter-section" style="background-image: url('images/presentation.jpg')">
-          <div class="container">
-            <div class="row">
-              <div class="video-content common-slider-section">
-                <a href="#" class="play"><span class="icon-play"></span></a>
-                <h2>Waxom Video Presentation</h2>
-                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="for-mobile">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-5 align-self-end">
-                <img src="images/iPhone-in-hand.jpg" alt="iPhone-in-hand">
-              </div>
-              <div class="col-12 col-md-7 d-flex flex-column justify-content-center">
-                <div class="for-mobile-title">
-                  <h3>Excellent for Mobile Devices.</h3>
-                </div>
-                <div class="for-mobile-content">
-                  <p>Qisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius claritas. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-                </div>
-                <ul class="ul-list">
-                  <li>Nam liber tempor cum soluta nobis eleifend option;</li>
-                  <li>Option congue nihil imperdiet doming id quod mazim placerat facer;</li>
-                  <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
-                  <li>Investigationes demonstraverunt lectores</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="common-gradient-section">
-          <div class="container">
-            <div class="row we-reached justify-content-around">
-              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
-                <div class="d-flex flex-column text-center">
-                  <span class="icon-users"></span>
-                  <span class="number">3587</span>
-                  <span class="description">Satisfied Clients</span>
-                </div>
-              </div>
-              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
-                <div class="d-flex flex-column text-center">
-                  <span class="icon-users"></span>
-                  <span class="number">207</span>
-                  <span class="description">Cups of coffee</span>
-                </div>
-              </div>
-              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
-                <div class="d-flex flex-column text-center">
-                  <span class="icon-bubble"></span>
-                  <span class="number">2500</span>
-                  <span class="description">Blog posts</span>
-                </div>
-              </div>
-              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
-                <div class="d-flex flex-column text-center">
-                  <span class="icon-heart"></span>
-                  <span class="number">873</span>
-                  <span class="description">Likes</span>
-                </div>
-              </div>
-              <div class="col-5 col-md-4 col-lg-2 common-decor-section">
-                <div class="d-flex flex-column text-center">
-                  <span class="icon-basecamp"></span>
-                  <span class="number">900</span>
-                  <span class="description">We launched</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="recent-posts">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <div class="common-title-section">
-                  <div class="title-holder">
-                    <h3>Recent Posts.</h3>
-                  </div>
-                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                 <div class="posts-slider">
-                    <div class="slider-item">
-                      <article class="slider-card">
-                        <div class="card-img-holder">
-                          <img src="images/legs.jpg" alt="legs">
-                          <div class="article-img-date">
-                            <span class="date">30</span>
-                            <span class="month">Sep.</span>
-                          </div>
-                        </div>
-                        <div class="article-card-title">
-                          <div class="heading-title">
-                            <h6>Lorem ipsum dolor sit amet</h6>
-                          </div>
-                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                          <a href="#" class="read-more">Read more &#9658;</a>
-                        </div>
-                      </article>
-                    </div>
-                    <div class="slider-item">
-                      <article class="slider-card">
-                        <div class="card-img-holder">
-                          <img src="images/notebook.jpg" alt="notebook">
-                          <div class="article-img-date">
-                            <span class="date">30</span>
-                            <span class="month">Sep.</span>
-                          </div>
-                        </div>
-                        <div class="article-card-title">
-                          <div class="heading-title">
-                            <h6>Lorem ipsum dolor sit amet</h6>
-                          </div>
-                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                          <a href="#" class="read-more">Read more &#9658;</a>
-                        </div>
-                      </article>
-                    </div>
-                    <div class="slider-item">
-                      <article class="slider-card">
-                        <div class="card-img-holder">
-                          <img src="images/ship.jpg" alt="ship">
-                          <div class="article-img-date">
-                            <span class="date">30</span>
-                            <span class="month">Sep.</span>
-                          </div>
-                        </div>
-                        <div class="article-card-title">
-                          <div class="heading-title">
-                            <h6>Lorem ipsum dolor sit amet</h6>
-                          </div>
-                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                          <a href="#" class="read-more">Read more &#9658;</a>
-                        </div>
-                      </article>
-                    </div>
-                    <div class="slider-item">
-                      <article class="slider-card">
-                        <div class="card-img-holder">
-                          <img src="images/notebook.jpg" alt="book2">
-                          <div class="article-img-date">
-                            <span class="date">30</span>
-                            <span class="month">Sep.</span>
-                          </div>
-                        </div>
-                        <div class="article-card-title">
-                          <div class="heading-title">
-                            <h6>Lorem ipsum dolor sit amet</h6>
-                          </div>
-                          <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
-                          <a href="#" class="read-more">Read more &#9658;</a>
-                        </div>
-                      </article>
-                    </div>
-                </div>
-                <div class="for-arrows-box d-flex justify-content-center">
-                      
-                </div>
-                <div class="help"></div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="emblems" style="background-image: url('images/emblems-bg.jpg')">
-          <div class="container">
-            <div class="row emblem-indent ">
-              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="emblem-holder">
-                    <img src="images/the-barber.png" alt="barber haircat emblem">
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="emblem-holder">
-                    <img src="images/delicious.png" alt="delicious emblem">
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="emblem-holder">
-                    <img src="images/designers.png" alt="designers emblem ">
-                </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3 d-flex align-items-center justify-content-center">
-                <div class="emblem-holder">
-                    <img src="images/royal.png" alt="cafe royal emblem">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <section class="our-info">
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="logo-holder">
-                  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="waxom"></a>
-                </div>
-                <div class="logo-title">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci suscipit lobortis claritatem.</p>
-                </div>
-                <a href="#" class="read-more">Read more &#9658;</a>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="heading-holder">
-                  <h4>Recent Posts</h4>
-                </div>
-                <ul class="our-info-list">
-                  <li class="post">
-                    <div class="post-date">
-                      <p><time>September 08, 2015</time></p>
-                    </div>
-                    <div class="post-content">
-                      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit</p>
-                    </div>
-                    <a class="post-link" href="#"></a>
-                  </li>
-                  <li class="post">
-                    <div class="post-date">
-                      <p><time>September 08, 2015</time></p>
-                    </div>
-                    <div class="post-content">
-                      <p>Diam nonummy nibh euismod tincidunt ut laoreet dolore magna</p>
-                    </div>
-                    <a class="post-link" href="#"></a>
-                  </li>
-                  <li class="post">
-                    <div class="post-date">
-                      <p><time>September 08, 2015</time></p>
-                    </div>
-                    <div class="post-content">
-                      <p>Claritas est etiam processus dynamicus, qui sequitur mutationem per seacula quarta decima</p>
-                    </div>
-                    <a class="post-link" href="#"></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="heading-holder">
-                  <h4>Our Twitter</h4>
-                </div>
-                <ul class="our-info-list">
-                  <li>
-                    <div class="twitter-content">
-                      <p><span class="twitter-content-span">@waxom</span> Cum soluta nobis eleifend option congue nihil imperdiet doming</p>
-                    </div>
-                    <span class="when">3 mins ago</span>
-                  </li>
-                  <li>
-                    <div class="twitter-content">
-                      <p>Mirum est <span class="twitter-content-span">#envato</span> notare quam littera gothica, quam nunc putamus parum anteposuerit litterarum</p>
-                    </div>
-                    <span class="when">5 hours ago</span>
-                  </li>
-                  <li>
-                    <div class="twitter-content">
-                      <p>Soluta nobis option  <a href="#">bit.ly/1Hniso7</a></p>
-                    </div>
-                    <span class="when">20 days ago</span>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="heading-holder">
-                  <h4>Dribbble Widget</h4>
-                </div>
-                <div class="row mt-4">
-                  <div class="col-6 mb-4">
-                    <img src="images/footer1.jpg" alt="">
-                  </div>
-                  <div class="col-6">
-                      <img src="images/footer2.jpg" alt="">
-                  </div>
-                  <div class="col-6">
-                      <img src="images/footer3.jpg" alt="">
-                  </div>
-                  <div class="col-6">
-                      <img src="images/footer4.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </main>
-      <footer>
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="item-holder">
-                <div class="item-left">
-                  <ul class="ul-bordered">
-                    <li>Copyright &copy; 2015 <a href="#">Waxom</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Support</a></li>
-                  </ul>
-                </div>
-                <div class="item-right">
-                  <ul class="ul-bordered">
-                    <li>Designed by <a href="#">ThemeFire</a></li>
-                    <li>Only on <a href="#">Envato Market</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+      </div>
+    </footer>
+    <div id="callbackButton" class="callback-block">
+    <span class="icon center">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+    </span>
     </div>
-    <script src="js/slick.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>
