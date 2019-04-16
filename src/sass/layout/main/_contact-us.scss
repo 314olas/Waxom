@@ -1,0 +1,253 @@
+.contact-us > img {
+  height: auto;
+  position: absolute;
+  width: auto;
+}
+
+.is-touch-device {
+  background-size: cover;
+}
+
+.contact-us {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 135px;
+  background-size: cover;
+  background-position: center center;
+  min-height: 776px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width:768px){
+    padding-top: 0;
+    min-height: 776px;
+    height: 776px;
+  }
+}
+
+.wrapper-block {
+  display: flex;
+  background-color: $primary;
+  border-radius: $border-radius;
+  flex-direction: column;
+  margin: 0 0 30px;
+  width: 100%;
+
+  .block-icon-title {
+    margin-bottom: 5px;
+  }
+
+  .title-holder {
+    margin-bottom: 20px;
+  }
+
+  .content-list-mails,
+  .content-list-numbers{
+    padding-left: 24px;
+
+  }
+
+  .content-list-numbers {
+
+
+    img{
+      position: absolute;
+      left: -24px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+    }
+  }
+
+  .content-list-mails{
+
+    span{
+      position: absolute;
+      left: -23px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+    }
+  }
+
+  .spacing{
+    margin-top: 4px;
+  }
+
+  .icon-tel,
+  .icon-mail{
+    vertical-align: middle;
+  }
+
+  .icon-mail {
+    font-size: 11px;
+
+  }
+
+  .icon-tel {
+    font-size: 14px;
+    padding-top: 7px;
+  }
+
+  label {
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  a {
+    font-weight: 300;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    padding: 44px 35px 36px 35px;
+    margin: 0;
+  }
+
+  @media (min-width:1200px){
+    width: 1006px;
+    padding-right: 87px;
+    padding-left: 57px;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+}
+
+.contact-us-info {
+  color: $white;
+  border-bottom-left-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+  order: 2;
+  padding: 15px;
+
+  a {
+    color: $white;
+  }
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.contact-form {
+  background-color: $white;
+  padding: 35px;
+  border-radius: $border-radius;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $gray-500;
+
+  input, textarea {
+    box-shadow: inset 0px 0px 4px rgba(150, 150, 150, 0.25);
+  }
+
+  input{
+    height: 46px;
+  }
+
+  .form-control:focus{
+    background-color: $gray-100 !important;
+    box-shadow: inset 0px 0px 4px rgba(150, 150, 150, 0.25) !important;
+    border-color: transparent !important;
+    border-radius: 3px !important;
+  }
+
+  .input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .add-files {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    right: 20px;
+    top: 6px;
+  }
+
+  .upload-list-item {
+    text-align: right;
+    margin-bottom: 14px;
+  }
+
+  button.close{
+    color: #898989;
+    padding-right: 20px;
+    padding-left: 8px;
+    font-size: medium;
+  }
+
+  .icon-close{
+    font-size: 10px;
+    vertical-align: sub;
+  }
+
+  .icon-clip {
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  .icon-loader{
+    vertical-align: middle;
+    margin-right: 5px;
+    animation: rotateloader 1s infinite linear;
+    display: inline-block;
+  }
+
+  .form-group:last-child{
+    margin-bottom: 0;
+  }
+
+  @media (min-width:768px){
+    position: absolute;
+    top: -30px;
+    right: 0;
+    width: 50%;
+    min-height: calc(100% + 60px);
+  }
+
+  @media (min-width:993px){
+    right: 87px;
+  }
+}
+
+.required {
+  position: absolute;
+  top: 23px;
+  left: 13px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  pointer-events: none;
+  opacity: 1;
+  visibility: visible;
+  transition: 0s;
+  cursor: text;
+
+  span {
+    color: $danger;
+  }
+}
+
+textarea + .required{
+  top:17px;
+}
+
+.form-control:focus + .required{
+  opacity: 0;
+}
+
+.required.invisible{
+  opacity: 0;
+}
+

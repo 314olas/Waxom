@@ -57,32 +57,54 @@ $(document).ready( function() {
         }());
     }
 
+    if(navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.includes("Edge")) {
+        $('body').on("mousewheel", function () {
+            event.preventDefault();
+            var wheelDelta = event.wheelDelta;
+            var currentScrollPosition = window.pageYOffset;
+            window.scrollTo(0, currentScrollPosition - wheelDelta);
+        });
+    }
+
 
     $('#falseinput').click(function(){
         $("#fileinput").click();
     });
 
-    $('#file').change(function() {
-        $('#inputFileSuccess').html($('#file')[0].files[0].name);
-    });
+    var uploadList = $(".upload-list");
+    var closeBtn = $("<button type='button' class='close'><span class='icon-close'></span></button>")
 
-    function tabsSetHeight() {
-        const tabs = $('.contacts-page .tab-pane');
-        tabs.map(item => {
-            $(tabs[item]).css('height', 'auto');
-        });
-        const maxHeight = Array.from(tabs).reduce((a,b) => {
-            return $(b).innerHeight() > a ? $(b).innerHeight() : a;
-        }, 0);
-        tabs.map(item => {
-            $(tabs[item]).css('height', maxHeight + 'px');
-        });
+    function removeItem(e) {
+        $(e.target).closest('.upload-list-item').remove();
     }
 
-    tabsSetHeight();
+    $('#file').change(function(e) {
 
-    $(window).on('resize orientationchange', function () {
-        tabsSetHeight();
+        for (var i = 0; i <= $(e.target)[0].files.length-1; i++){
+            var uploadListItem = $("<div class='upload-list-item'></div>");
+            const itemId = + new Date();
+            var closeBtn = $("<button type='button' class='close'><span class='icon-close'></span></button>");
+            uploadListItem.text("File " + $(e.target)[0].files[i].name);
+            uploadListItem.append(closeBtn);
+            uploadListItem.attr('id', itemId);
+            uploadList.append(uploadListItem);
+            $('#' + itemId).find('.close').click(function (event) {
+                const closestItem = $(event.target).closest('.upload-list-item');
+                closestItem.hide(400, function () {
+                    closestItem.remove()
+                });
+            });
+        }
+    });
+
+    function checkValue(target){
+        target.value ?
+            $(target).next().addClass('invisible') :
+            $(target).next().removeClass('invisible');
+    }
+
+    $('.fake-placeholder-input').on('blur', function (e) {
+        checkValue(e.target);
     });
 
     jQuery(function() {
@@ -90,10 +112,43 @@ $(document).ready( function() {
     });
 
 
+
+    function tabsSetHeight() {
+        const tabs = $('.contacts-page .tab-pane');
+        // tabs.map(item => {
+        //     $(tabs[item]).css('height', 'auto');
+        // });
+        const maxHeight = Array.from(tabs).reduce((a,b) => {
+            return $(b).innerHeight() > a ? $(b).innerHeight() : a;
+        }, 0);
+        // tabs.map(item => {
+        //     $(tabs[item]).css('height', maxHeight + 'px');
+        // });
+        return maxHeight;
+    }
+
+    //  $('.nav-link').on('show.bs.tab', function (e) {
+    //     let prevItem = $($(e.relatedTarget).attr('href'));
+    //     const tabContent = $('.tab-content');
+    //
+    //     let currentItem = $($(e.target).attr('href'));
+    //      const newHeight = currentItem.height();
+    //      // tabContent.css('min-heigth', (prevItem.height() ) + 'px');
+    //      tabContent.css('heigth', (prevItem.height() + 30) + 'px');
+    //      tabContent.animate({height: newHeight + "px"}, {
+    //          duration: 100
+    //      });
+    // });
+
+
+
+
+
+
 // comment
     function initBgParallax() {
         jQuery('.contact-us').parallaxBlock({
-            image: 'img',
+            image: '> img',
             fallbackClass: 'is-touch-device'
         });
     }
@@ -245,7 +300,7 @@ $(document).ready( function() {
 
         $.fn.parallaxBlock = function(options){
             options = $.extend({
-                parallaxOffset: 5, // percent from 0 - top 100 (from window height)
+                parallaxOffset: 0, // percent from 0 - top 100 (from window height)
                 fallbackClass: 'is-touch-device',
                 image: 'img'
             }, options);
@@ -260,9 +315,6 @@ $(document).ready( function() {
             });
         };
     }(jQuery));
+
+
 });
-
-
-
-
-

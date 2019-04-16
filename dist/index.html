@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SSA Group</title>
-    <!--<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">-->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tabs.js"></script>
 
 </head>
 <body>
@@ -82,7 +83,7 @@
           <img src="images/bg.jpg" alt="">
           <div class="container">
             <div class="row" >
-              <div class="col-12 d-flex justify-content-center ">
+              <div class="col-12 ">
                 <div class="wrapper-block">
                   <div class="contact-us-info ">
                     <div class="title-holder">
@@ -91,58 +92,70 @@
                     <div class="block-icon-title">
                       <h3>Sales Department</h3>
                     </div>
-                    <div class="block-icon">
-                      <div class="holder-icon">
-                        <span class="icon-tel"></span>
-                      </div>
-                      <ul class="content-list">
-                        <li><a href="tel:+18882744492">+1 888 274 44 92</a></li>
-                        <li><a href="tel:+46812111478">+46 81 211 14 78</a></li>
-                        <li><a href="tel:+380947100091">+380 94 710 00 91</a></li>
+                    <ul class="content-list-numbers mb-3">
+                      <li>
+                        <a href="tel:+18882744492">+1 888 274 44 92</a>
+                        <img src="images/usa.png" alt="">
+                      </li>
+                      <li>
+                        <a href="tel:+46812111478">+46 81 211 14 78</a>
+                        <span class="icon-flag-swe"></span>
+                        <img src="images/sweden.png" alt="">
+                      </li>
+                      <li>
+                        <a href="tel:+31631228909">+31 631 228 909</a>
+                        <img src="images/netherlands.png" alt="">
+                      </li>
+                      <li>
+                        <a href="tel:+380947100091">+380 94 710 00 91</a>
+                        <img src="images/ukraine.png" alt="">
+                      </li>
+                    </ul>
+                    <ul class="content-list-mails mb-5">
+                        <li>
+                          <a href="mailto:sales@ssa.group">sales@ssa.group</a>
+                          <span class="icon-mail"></span>
+                        </li>
                       </ul>
-                    </div>
-                    <div class="block-icon mb-3">
-                      <div class="holder-icon">
-                        <span class="icon-mail"></span>
-                      </div>
-                      <ul class="content-list">
-                        <li><a href="mailto:sales@ssa.group">sales@ssa.group</a></li>
-                        <li><a href="mailto:contact@ssa.group">contact@ssa.group</a></li>
-                      </ul>
-                    </div>
                     <div class="block-icon-title">
                       <h3>Recruitment Department</h3>
                     </div>
-                    <div class="block-icon">
-                      <div class="holder-icon">
-                        <span class="icon-tel"></span>
-                      </div>
-                      <a href="tel:+380577649130">+380 57 764 91 30</a>
-                    </div>
-                    <div class="block-icon">
-                      <div class="holder-icon">
+                    <ul class="content-list-numbers">
+                      <li>
+                        <a href="tel:+380577649130">+380 57 764 91 30</a>
+                        <img src="images/ukraine.png" alt="">
+                      </li>
+                    </ul>
+                    <ul class="content-list-mails">
+                      <li>
+                        <a href="mailto:hr@ssa.group">hr@ssa.group</a>
                         <span class="icon-mail"></span>
-                      </div>
-                      <a href="mailto:hr@ssa.group">hr@ssa.group</a>
-                    </div>
+                      </li>
+                    </ul>
                   </div>
                   <form action="#" class="contact-form">
                     <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Name" name="name">
+                      <input class="form-control fake-placeholder-input" type="text" name="name" required="required" id="name">
+                       <label class="required" for="name">Name<span>*</span></label>
                     </div>
                     <div class="form-group">
-                      <input class="form-control" type="text" placeholder="Phone" name="phone">
+                      <input class="form-control" type="text" name="phone">
+                      <label class="required">Phone</label>
                     </div>
                     <div class="form-group">
-                      <input class="form-control" type="email" placeholder="Email" name="email">
+                      <input class="form-control fake-placeholder-input" type="email" name="email" required="required">
+                      <label class="required">Email<span>*</span></label>
                     </div>
                     <div class="form-group position-relative">
-                      <textarea class="form-control" name="describe your idea" placeholder="Describe your idea" rows="5" ></textarea>
+                      <textarea class="form-control fake-placeholder-input" name="describe your idea" rows="5" ></textarea>
+                      <label class="required">Describe your idea</label>
                       <div class="add-files">
-                        <span class="input-file-success" id="inputFileSuccess"></span>
-                        <input type="file" name="file" id="file" class="input-file">
+                        <input type="file" name="file" id="file" class="input-file" multiple>
                         <label for="file"><span class="icon-clip"></span></label>
                       </div>
+                    </div>
+                    <div class="upload-list">
+
                     </div>
                     <div class="form-group d-flex">
                       <button type="submit" class="btn btn-danger flex-grow-1">Send Request</button>
@@ -153,9 +166,9 @@
             </div>
           </div>
         </section>
-        <section class="location">
+        <section class="location common-space">
           <div class="common-title-holder">
-            <h2>our location</h2>
+            <h2>our locations</h2>
           </div>
           <div class="container">
             <div class="row">
@@ -164,14 +177,19 @@
                   <div class="img-holder" style="background-image: url('images/img-1a.jpg')">
                   </div>
                   <div class="hidden-block">
-                    <ul class="content-list">
-                      <li><p><strong>Megapolis Office Center</strong></p></li>
-                      <li><p>Office 607</p></li>
-                      <li><adress>Moskovskiy pr. 179-B</adress></li>
-                      <li><adress>Kharkiv, 61068, Ukraine</adress></li>
-                    </ul>
-                    <div class="location-icon">
-                      <span class="icon-location"></span>
+                    <div class="title">
+                      <p>Main Office – Kharkiv, Ukraine</p>
+                    </div>
+                    <div class="content">
+                      <ul class="content-list">
+                        <li><p><strong>Megapolis Office Center</strong></p></li>
+                        <li><p>Office 607</p></li>
+                        <li><adress>Moskovskiy pr. 179-B</adress></li>
+                        <li><adress>Kharkiv, 61068, Ukraine</adress></li>
+                      </ul>
+                      <div class="location-icon">
+                        <span class="icon-location"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -181,15 +199,20 @@
                   <div class="img-holder" style="background-image: url('images/img-2a.jpg')">
                   </div>
                   <div class="hidden-block">
-                    <ul class="content-list">
-                      <li><p><strong>Capitalist Office Center</strong></p></li>
-                      <li><p>Office 603</p></li>
-                      <li><adress>Nauki pr. 27-B</adress></li>
-                      <li><adress>Kharkiv, 61068, Ukraine</adress></li>
-                    </ul>
-                    <div class="location-icon">
-                      <span class="icon-location"></span>
+                    <div class="title">
+                      <p>R&D Center – Kharkiv, Ukraine</p>
                     </div>
+                   <div class="content">
+                     <ul class="content-list">
+                       <li><p><strong>Capitalist Office Center</strong></p></li>
+                       <li><p>Office 603</p></li>
+                       <li><adress>Nauki pr. 27-B</adress></li>
+                       <li><adress>Kharkiv, 61068, Ukraine</adress></li>
+                     </ul>
+                     <div class="location-icon">
+                       <span class="icon-location"></span>
+                     </div>
+                   </div>
                   </div>
                 </div>
               </div>
@@ -198,66 +221,103 @@
                   <div class="img-holder" style="background-image: url('images/img-3a.jpg')">
                   </div>
                   <div class="hidden-block">
-                    <ul class="content-list">
-                      <li><p><strong>Poema Office Center</strong></p></li>
-                      <li><p>Office 26, Floor 10</p></li>
-                      <li><adress>Teatral'nyi Ln. 4</adress></li>
-                      <li><adress>Kharkiv, 61057, Ukraine</adress></li>
-                    </ul>
-                    <div class="location-icon">
-                      <span class="icon-location"></span>
+                    <div class="title">
+                      <p>Sales Office – Kharkiv, Ukraine</p>
+                    </div>
+                    <div class="content">
+                      <ul class="content-list">
+                        <li><p><strong>Poema Office Center</strong></p></li>
+                        <li><p>Office 26, Floor 10</p></li>
+                        <li><adress>Teatral'nyi Ln. 4</adress></li>
+                        <li><adress>Kharkiv, 61057, Ukraine</adress></li>
+                      </ul>
+                      <div class="location-icon">
+                        <span class="icon-location"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6 col-lg-4 mb-5 mb-lg-0">
+              <div class="col-sm-6 col-lg-4 mb-5">
                 <div class="location-item">
                   <div class="img-holder" style="background-image: url('images/img-4a.jpg')">
                   </div>
                   <div class="hidden-block">
-                    <ul class="content-list">
-                      <li><p><strong>Prizma Office Center</strong></p></li>
-                      <li><p>Office 10-02</p></li>
-                      <li><adress>TGinki str.7</adress></li>
-                      <li><adress>Dnipro, 49000, Ukraine</adress></li>
-                    </ul>
-                    <div class="location-icon">
-                      <span class="icon-location"></span>
+                    <div class="title">
+                      <p>R&D – Dnipro, Ukraine</p>
+                    </div>
+                    <div class="content">
+                      <ul class="content-list">
+                        <li><p><strong>Prizma Office Center</strong></p></li>
+                        <li><p>Office 10-02</p></li>
+                        <li><adress>Glinki str. 7</adress></li>
+                        <li><adress>Dnipro, 49000, Ukraine</adress></li>
+                      </ul>
+                      <div class="location-icon">
+                        <span class="icon-location"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4 mb-5 ">
+                <div class="location-item">
+                  <div class="img-holder" style="background-image: url('images/img-5a.jpg')">
+                  </div>
+                  <div class="hidden-block">
+                    <div class="title">
+                      <p>R&D – Kyiv, Ukraine</p>
+                    </div>
+                    <div class="content">
+                      <ul class="content-list">
+                        <li><p><strong>Guliver Office Center</strong></p></li>
+                        <li><p>Office 11, Floor 12</p></li>
+                        <li><adress>Sportyvna Square, 1a</adress></li>
+                        <li><adress>Kyiv, 01023, Ukraine</adress></li>
+                      </ul>
+                      <div class="location-icon">
+                        <span class="icon-location"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4 mb-5 mb-md-0">
-                <div class="location-item">
-                  <div class="img-holder" style="background-image: url('images/img-5a.jpg')">
+                <div class="location-item education">
+                  <div class="img-holder" style="background-image: url('images/img-6a.jpg')">
                   </div>
-                  <div class="hidden-block">
-                    <ul class="content-list">
-                      <li><p><strong>Guliver Office Center</strong></p></li>
-                      <li><p>Office 11, Floor 12</p></li>
-                      <li><adress>Sportyvna Square, 1a</adress></li>
-                      <li><adress>Kyiv, 01023, Ukraine</adress></li>
-                    </ul>
-                    <div class="location-icon">
-                      <span class="icon-location"></span>
+                  <div class="hidden-block ">
+                    <div class="title">
+                      <p>Education  – Kharkiv, Ukraine</p>
+                    </div>
+                    <div class="content">
+                      <ul class="content-list">
+                        <li><p><strong>IT Cloud Academy</strong></p></li>
+                        <li><p><strong>Solaris Business Center</strong></p></li>
+                        <li><adress>Office 5, Floor 12</adress></li>
+                        <li><adress>Otakara Iarosha str. 18</adress></li>
+                        <li><adress>Kharkiv, 61000, Ukraine</adress></li>
+                      </ul>
+                      <div class="location-icon">
+                        <span class="icon-location"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-lg-4">
-                <div class="location-item">
-                  <div class="img-holder" style="background-image: url('images/img-6a.jpg')">
+                <div class="location-item sales-office">
+                  <div class="img-holder" style="background-image: url('images/img-7.jpg')">
                   </div>
                   <div class="hidden-block">
-                    <ul class="content-list">
-                      <li><p><strong>IT Cloud Academy</strong></p></li>
-                      <li><p><strong>Solaris Business Center</strong></p></li>
-                      <li><adress>Office 5, Floor 12</adress></li>
-                      <li><adress>Otakara Iarosha str.18</adress></li>
-                      <li><adress>Kharkiv, 61000, Ukraine</adress></li>
-                    </ul>
-                    <div class="location-icon">
-                      <span class="icon-location"></span>
+                    <div class="title">
+                      <p>Sales Office – Amsterdam, Netherlands</p>
+                    </div>
+                    <div class="content">
+                      <p>SSA Group B.V</p>
+                      <div class="location-icon">
+                        <span class="icon-location"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -265,224 +325,255 @@
             </div>
           </div>
         </section>
-        <section class="our-team">
+        <section class="our-team common-space">
           <div class="common-title-holder">
-            <h2>OUR TEAM</h2>
+            <h2>Contact Persons</h2>
           </div>
           <div class="container">
-            <ul class="nav nav-tabs" id="teamTab" role="teamtab">
+            <ul class="tabset nav-tabs nav" id="teamTab" role="teamlist">
               <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#headsOfDepartments" role="tab" aria-controls="headsOfDepartments" aria-selected="true">heads of departments</a>
+                <a href="#businessDevelopmentManagers" class="nav-link">Business development managers</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#businessDevelopment" role="tab" aria-controls="businessDevelopment" aria-selected="false">business development</a>
+                <a href="#headsOfDepartments" class="nav-link active">heads of departments</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#recruiters" role="tab" aria-controls="recruiters" aria-selected="false">recruiters</a>
+                <a href="#recruiters" class="nav-link">recruiters</a>
               </li>
             </ul>
-            <div class="tab-content" id="teamTabContent">
-              <div class="tab-pane fade show active" id="headsOfDepartments" role="tabpanel" aria-labelledby="headsOfDepartments-tab">
+            <div class="content-tab">
+              <div id="businessDevelopmentManagers" class="tab-item">
                 <div class="row">
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Frontend</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Pavlo.jpg" alt="pavlo photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Pavlo.jpg" alt="pavlo photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Pavlo Pochuyev</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Pavlo Pochuyev</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Backend</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Denis.jpg" alt="denis photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Denis.jpg" alt="denis photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Denis Ryabukha</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Denis Ryabukha</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Mobile</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Dmytro.jpg" alt="dmytro photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Dmytro.jpg" alt="dmytro photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Dmytro Kuklenko</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Dmytro Kuklenko</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
-                  </div>
-                  <div class="col-6 col-lg-3 item">
-                    <div class="title-holder">
-                      <p>SSA Backend & SSA Ecommerce</p>
-                    </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Alexandr.jpg" alt="alexandr photo">
-                    </div>
-                    <div class="name-holder">
-                      <p><strong>Sharamko Alexandr</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
-                  </div>
-                  <div class="col-6 col-lg-3 item">
-                    <div class="title-holder">
-                      <p>SSA DESIGN</p>
-                    </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Alexey.jpg" alt="alexey photo">
-                    </div>
-                    <div class="name-holder">
-                      <p><strong>Alexey Ivanov</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
-                  </div>
-                  <div class="col-6 col-lg-3 item">
-                    <div class="title-holder">
-                      <p>SSA Data & Desktop</p>
-                    </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Evgeniy.jpg" alt="evgeniy photo">
-                    </div>
-                    <div class="name-holder">
-                      <p><strong>Evgeniy Antsybor</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
-                  </div>
-                  <div class="col-6 col-lg-3 item">
-                    <div class="title-holder">
-                      <p>SSA Backend</p>
-                    </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Dmytro%20(2).jpg" alt="dmytro photo">
-                    </div>
-                    <div class="name-holder">
-                      <p><strong>Dmytro Obolonyk</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
-                  </div>
-                  <div class="col-6 col-lg-3 item">
-                    <div class="title-holder">
-                      <p>SSA Backend</p>
-                    </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Vladimir.jpg" alt="vladimir photo">
-                    </div>
-                    <div class="name-holder">
-                      <p><strong>Vladimir Udalov</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="businessDevelopment" role="tabpanel" aria-labelledby="businessDevelopment-tab">
+              <div id="headsOfDepartments" class="tab-item">
                 <div class="row">
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Frontend</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Pavlo.jpg" alt="pavlo photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Pavlo.jpg" alt="pavlo photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Pavlo Pochuyev</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Pavlo Pochuyev</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Backend</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Denis.jpg" alt="denis photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Denis.jpg" alt="denis photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Denis Ryabukha</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Denis Ryabukha</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Mobile</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Dmytro.jpg" alt="dmytro photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Dmytro.jpg" alt="dmytro photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Dmytro Kuklenko</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Dmytro Kuklenko</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
-                </div>
-              </div>
-              <div class="tab-pane fade" id="recruiters" role="tabpanel" aria-labelledby="recruiters-tab">
-                <div class="row">
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Backend & SSA Ecommerce</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Alexandr.jpg" alt="alexandr photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Alexandr.jpg" alt="alexandr photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Sharamko Alexandr</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Sharamko Alexandr</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA DESIGN</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Alexey.jpg" alt="alexey photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Alexey.jpg" alt="alexey photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Alexey Ivanov</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Alexey Ivanov</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Data & Desktop</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Evgeniy.jpg" alt="evgeniy photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Evgeniy.jpg" alt="evgeniy photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Evgeniy Antsybor</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Evgeniy Antsybor</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Backend</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Dmytro%20(2).jpg" alt="dmytro photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Dmytro%20(2).jpg" alt="dmytro photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Dmytro Obolonyk</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Dmytro Obolonyk</strong></p>
-                    </div>
-                    <a href="#"><span class="icon-mail"></span></a>
                   </div>
                   <div class="col-6 col-lg-3 item">
                     <div class="title-holder">
                       <p>SSA Backend</p>
                     </div>
-                    <div class="img-holder">
-                      <img src="images/HeadsOfDepartment/Vladimir.jpg" alt="vladimir photo">
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Vladimir.jpg" alt="vladimir photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Vladimir Udalov</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
                     </div>
-                    <div class="name-holder">
-                      <p><strong>Vladimir Udalov</strong></p>
+                  </div>
+                </div></div>
+              <div id="recruiters" class="tab-item">
+                <div class="row">
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend & SSA Ecommerce</p>
                     </div>
-                    <a href="#"><span class="icon-mail"></span></a>
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Alexandr.jpg" alt="alexandr photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Sharamko Alexandr</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA DESIGN</p>
+                    </div>
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Alexey.jpg" alt="alexey photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Alexey Ivanov</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Data & Desktop</p>
+                    </div>
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Evgeniy.jpg" alt="evgeniy photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Evgeniy Antsybor</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Dmytro%20(2).jpg" alt="dmytro photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Dmytro Obolonyk</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-lg-3 item">
+                    <div class="title-holder">
+                      <p>SSA Backend</p>
+                    </div>
+                    <div class="content">
+                      <div class="img-holder">
+                        <img src="images/HeadsOfDepartment/Vladimir.jpg" alt="vladimir photo">
+                      </div>
+                      <div class="name-holder">
+                        <p><strong>Vladimir Udalov</strong></p>
+                      </div>
+                      <a href="#"><span class="icon-mail"></span></a>
+                    </div>
                   </div>
                 </div>
               </div>

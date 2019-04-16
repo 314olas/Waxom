@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?qjvhbx');
-  src:  url('fonts/icomoon.eot?qjvhbx#iefix') format('embedded-opentype'),
-  url('fonts/icomoon.ttf?qjvhbx') format('truetype'),
-  url('fonts/icomoon.woff?qjvhbx') format('woff'),
-  url('fonts/icomoon.svg?qjvhbx#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?lp2kx6');
+  src:  url('fonts/icomoon.eot?lp2kx6#iefix') format('embedded-opentype'),
+  url('fonts/icomoon.ttf?lp2kx6') format('truetype'),
+  url('fonts/icomoon.woff?lp2kx6') format('woff'),
+  url('fonts/icomoon.svg?lp2kx6#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,17 +25,17 @@
 }
 
 .icon-tel:before {
-  content: "\e900";
-}
-.icon-mail:before {
   content: "\e904";
 }
+.icon-mail:before {
+  content: "\e939";
+}
 .icon-location:before {
-  content: "\e905";
+  content: "\e93a";
 }
 .icon-clip:before {
   content: "\e901";
 }
-.icon-loader:before {
-  content: "\e902";
+.icon-close:before {
+  content: "\e900";
 }
